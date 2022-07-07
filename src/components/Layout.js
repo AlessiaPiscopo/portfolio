@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "./Navbar"
+import "../styles/global.css"
 
-// children prop represents the children between <Layout></Layout>
 function Layout({ children }) {
   return (
     <div className="layout">
