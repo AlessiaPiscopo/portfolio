@@ -1,0 +1,13 @@
+.portfolio {
+  text-align: center;
+}
+
+/* always state the class when selecting nested elements because these cannot be scoped automatically */
+.portfolio > h1 {
+  font-size: 3em;
+}
+
+.portfolio > h2 {
+  font-size: 2em;
+  font-weight: 400;
+}

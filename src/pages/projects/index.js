@@ -1,11 +1,15 @@
 import React from "react"
+import Layout from "../../components/Layout"
+import { portfolio } from "../../styles/projects.module.css"
 
 function Projects() {
   return (
-    <div>
-      <h1>Projects</h1>
-      <h2>Some of my projects</h2>
-    </div>
+    <Layout>
+      <div className={portfolio}>
+        <h1>Projects</h1>
+        <h2>Some of my projects</h2>
+      </div>
+    </Layout>
   )
 }
 
