@@ -28,6 +28,11 @@ p {
   line-height: 1.1rem;
 }
 
+a {
+  text-decoration: none;
+  color: #bbb;
+}
+
 /* layout & nav */
 
 /* one main column in center */

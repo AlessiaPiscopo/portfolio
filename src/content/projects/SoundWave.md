@@ -4,6 +4,4 @@ stack: React, Node.js, Express, Firebase, Spotify API, JavaScript ES6, HTML & CS
 slug: soundwave
 ---
 
-### hello
-
-blthgfshgs
+### Details
