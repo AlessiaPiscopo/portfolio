@@ -8,7 +8,8 @@ import {
 import { graphql, Link } from "gatsby"
 
 function Projects({ data }) {
-  const projects = data.allMarkdownRemark.nodes
+  // we use data.projects.nodes instead of data.allMarkdownRemark.nodes because we gave the allMarkdownRemark property the name "projects" in our query
+  const projects = data.projects.nodes
 
   return (
     <Layout>
@@ -28,6 +29,12 @@ function Projects({ data }) {
             </Link>
           ))}
         </div>
+
+        {/* This contact section is to show how we can query multiple data items in one component by naming the data properties within our query */}
+        <p>
+          Like my work? Let's collaborate! Contact me at
+          <strong>{data.contact.siteMetadata.contact}</strong>
+        </p>
       </div>
     </Layout>
   )
@@ -35,10 +42,9 @@ function Projects({ data }) {
 
 export default Projects
 
-// export page query
 export const query = graphql`
   query ProjectsList {
-    allMarkdownRemark {
+    projects: allMarkdownRemark {
       nodes {
         frontmatter {
           slug
@@ -46,6 +52,12 @@ export const query = graphql`
           title
         }
         id
+      }
+    }
+
+    contact: site {
+      siteMetadata {
+        contact
       }
     }
   }

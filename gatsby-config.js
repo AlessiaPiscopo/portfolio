@@ -17,8 +17,9 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: "Alessia Piscopo",
-    description: "my website",
+    title: "Alessia Piscopo | Full-Stack Web Developer",
+    description: "Alessia Piscopo's Portfolio Website",
     copyright: "Copyright (c) 2022 Alessia Piscopo",
+    contact: "alessia.piscopo@hotmail.com",
   },
 }
