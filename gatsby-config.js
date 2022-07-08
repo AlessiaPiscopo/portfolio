@@ -6,5 +6,19 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content/projects`,
+        path: `${__dirname}/src/content/projects`,
+      },
+    },
+  ],
+  siteMetadata: {
+    title: "Alessia Piscopo",
+    description: "my website",
+    copyright: "Copyright (c) 2022 Alessia Piscopo",
+  },
 }
