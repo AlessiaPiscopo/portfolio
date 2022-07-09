@@ -6,8 +6,9 @@ import {
   projectCard,
 } from "../../styles/projects.module.css"
 import { graphql, Link } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-function Projects({ data }) {
+export default function Projects({ data }) {
   // we use data.projects.nodes instead of data.allMarkdownRemark.nodes because we gave the allMarkdownRemark property the name "projects" in our query
   const projects = data.projects.nodes
 
@@ -24,15 +25,21 @@ function Projects({ data }) {
               to={`/projects/${project.frontmatter.slug}`}
               key={project.id}
             >
+              <GatsbyImage
+                image={
+                  project.frontmatter.thumbnail.childImageSharp.gatsbyImageData
+                }
+                alt="project thumbnail"
+              />
               <h3>{project.frontmatter.title}</h3>
               <p>{project.frontmatter.stack}</p>
             </Link>
           ))}
         </div>
 
-        {/* This contact section is to show how we can query multiple data items in one component by naming the data properties within our query */}
+        {/* This contact section is to show how we can query multiple data items in one component by naming the data properties (see query below) */}
         <p>
-          Like my work? Let's collaborate! Contact me at
+          Like my work? Let's collaborate! Contact me at{" "}
           <strong>{data.contact.siteMetadata.contact}</strong>
         </p>
       </div>
@@ -40,16 +47,23 @@ function Projects({ data }) {
   )
 }
 
-export default Projects
-
 export const query = graphql`
-  query ProjectsList {
+  query ProjectsPage {
     projects: allMarkdownRemark {
       nodes {
         frontmatter {
           slug
           stack
           title
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FULL_WIDTH
+                placeholder: BLURRED
+                formats: [AUTO, WEBP]
+              )
+            }
+          }
         }
         id
       }

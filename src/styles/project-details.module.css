@@ -1,0 +1,18 @@
+.projectDetails > h2 {
+  font-size: 3.5em;
+  margin-top: 80px;
+}
+
+.projectDetails > h3 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.htmlContent {
+  margin-top: 40px;
+}
+
+.bannerImgContainer {
+  margin-bottom: 40px;
+}

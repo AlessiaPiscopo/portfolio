@@ -7,4 +7,14 @@ thumbnail: ../../images/project-thumbnails/LaCasina-thumb.png
 bannerImg: ../../images/project-banners/LaCasina-banner.png
 ---
 
-### Details
+### Description
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eligendi dolore expedita corrupti maiores ullam blanditiis quam eos repudiandae, natus debitis molestiae nemo dicta sequi culpa aperiam ea rerum ad.
+
+### Description
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eligendi dolore expedita corrupti maiores ullam blanditiis quam eos repudiandae, natus debitis molestiae nemo dicta sequi culpa aperiam ea rerum ad.
+
+### Description
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eligendi dolore expedita corrupti maiores ullam blanditiis quam eos repudiandae, natus debitis molestiae nemo dicta sequi culpa aperiam ea rerum ad.
