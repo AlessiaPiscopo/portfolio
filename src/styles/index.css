@@ -1,0 +1,56 @@
+/* FONT SIZE SYSTEM (rem) - 1rem = 10px
+1 / 1.2 / 1.4 / 1.6 / 1.8 / 2 / 2.4 / 3 / 3.6 / 4.4 / 5.2 / 6.2 / 7.4 / 8.6 / 9.8 */
+
+/* SPACING SYSTEM (rem)
+0.2 / 0.4 / 0.8 / 1.2 / 1.6 / 2.4 / 3.2 / 4.8 / 6.4 / 8 / 9.6 / 12.8 */
+
+/* Custom Properties */
+:root {
+  --color-white: #f8f9fa;
+  --color-black: #181a1c;
+
+  --text-color-white: var(--color-white);
+  --text-color-black: var(--color-black);
+
+  --bg-color: #999;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  font-size: 62.5%; /* sets 1rem equal to 10px instead of default 16px (10px/16px = 62.5%) */
+}
+
+body {
+  font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: var(--text-color-black);
+  -webkit-font-smoothing: antialiased;
+
+  background-color: var(--bg-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
