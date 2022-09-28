@@ -1,19 +1,22 @@
 import React from "react";
 import { Link } from "gatsby";
+import { StyledNavbar, Nav, MenuContainer } from "../styles/Navbar.styled";
 
 export default function Navbar() {
   return (
-    <>
-      <nav>
-        <Link to="/">AP</Link>
+    <StyledNavbar className="navbar">
+      <Nav className="nav">
+        {/* Logo */}
+        <Link to="/" className="initials">
+          AP
+        </Link>
 
-        <div className="nav-links">
-          <Link to="/">Home</Link>
+        <MenuContainer className="menu-container">
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
-        </div>
-      </nav>
-    </>
+        </MenuContainer>
+      </Nav>
+    </StyledNavbar>
   );
 }

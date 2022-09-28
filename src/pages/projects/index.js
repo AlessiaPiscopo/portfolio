@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 export default function Projects() {
   return (
     <Layout>
-      <div>List of my projects</div>
+      <h1>Projects</h1>
     </Layout>
   );
 }
