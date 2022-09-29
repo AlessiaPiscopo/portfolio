@@ -23,12 +23,12 @@ export default function Hero() {
 
         <Blurb>
           <p>
-            Hello 👋, I am a recent Web Development grad 🎓 and Urban Beekeeper
-            🐝 from Montreal, QC.
+            Recent Web Development grad 🎓, urban beekeeper 🐝, and creative
+            thinker 🌸.
           </p>
           <p>
-            I particularly love Frontend Development and I’m currently seeking a
-            new work, internship, or project opportunity 🌱.
+            I particularly love Frontend Development & UI/UX Design and am
+            currently seeking a new work or internship opportunity 🌱.
           </p>
         </Blurb>
       </section>
