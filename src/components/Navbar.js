@@ -12,6 +12,8 @@ export default function Navbar() {
         </Link>
 
         <MenuContainer className="menu-container">
+          <Link to="/">Home</Link>
+
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>

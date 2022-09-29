@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
+// TODO: hamburger + slide-in sidebar menu in mobile view
+
 export const StyledNavbar = styled.div`
   color: var(--color-gray-6);
 
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 1.2rem 2rem;
+  padding: 2.4rem 4.8rem;
 
   .initials {
     color: var(--color-opal);
@@ -19,20 +21,12 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 7.4rem;
-
-  /* @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5rem 0 1rem 0;
-  } */
 `;
 
 export const MenuContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 5.2rem;
+  gap: 6.4rem;
 `;
 
 // export const IconsNav = styled.div`

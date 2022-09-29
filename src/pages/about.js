@@ -11,6 +11,8 @@ export default function About() {
         dignissimos distinctio delectus culpa earum quo quisquam mollitia soluta
         adipisci natus?
       </p>
+
+      {/* faded map of Montreal with pin at bottom (Google Maps API) */}
     </Layout>
   );
 }
