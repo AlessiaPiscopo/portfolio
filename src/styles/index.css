@@ -28,7 +28,7 @@
   --text-color-white: var(--color-white);
   --text-color-black: var(--color-black);
 
-  --bg-color: #f1f3f5;
+  --bg-color: var(--color-gray-1);
 }
 
 *,

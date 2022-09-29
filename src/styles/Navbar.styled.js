@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
   color: var(--color-gray-6);
-
+  background-color: var(--color-gray-1);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -21,12 +21,22 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
 `;
 
 export const MenuContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 6.4rem;
+
+  @media screen and (max-width: 600px) {
+    gap: 3.2rem;
+  }
 `;
 
 // export const IconsNav = styled.div`

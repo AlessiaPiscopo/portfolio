@@ -6,6 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export const StyledHero = styled.section`
   margin: 6.4rem auto;
+  padding: 2.4rem;
   display: flex;
   justify-content: center;
 
