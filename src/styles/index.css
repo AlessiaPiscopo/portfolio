@@ -43,20 +43,19 @@ html {
   box-sizing: border-box;
   min-height: 100%;
   font-size: 62.5%; /* sets 1rem equal to 10px instead of default 16px (10px/16px = 62.5%) */
-
-  border: 2rem solid var(--color-opal-1);
 }
 
 body {
+  /* border: 2rem solid var(--color-opal-1); */
+  /* padding: 2rem; */
+
+  background-color: var(--bg-color);
+
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.25;
   color: var(--text-color-black);
   -webkit-font-smoothing: antialiased;
-
-  background-color: var(--bg-color);
-
-  padding: 2rem;
 }
 
 button {
