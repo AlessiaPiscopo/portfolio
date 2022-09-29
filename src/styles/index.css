@@ -11,8 +11,19 @@
 :root {
   --color-white: #f8f9fa;
   --color-black: #181a1c;
+
   --color-opal: #93ada9;
+  --color-opal-1: #bcccc9;
+
+  /* grays */
   --color-gray: #495056;
+  --color-gray-0: #f8f9fa;
+  --color-gray-1: #f1f3f5;
+  --color-gray-2: #e9ecef;
+  --color-gray-3: #dee2e6;
+  --color-gray-4: #ced4da;
+  --color-gray-5: #adb5bd;
+  --color-gray-6: #868e96;
 
   --text-color-white: var(--color-white);
   --text-color-black: var(--color-black);
@@ -32,6 +43,8 @@ html {
   box-sizing: border-box;
   min-height: 100%;
   font-size: 62.5%; /* sets 1rem equal to 10px instead of default 16px (10px/16px = 62.5%) */
+
+  border: 2rem solid var(--color-opal-1);
 }
 
 body {
@@ -64,4 +77,19 @@ a:hover {
 
 li {
   list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", Helvetica, sans-serif;
+}
+
+.btn {
+  /* font-family: "Inter", Helvetica, sans-serif; */
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  padding: 1.2rem 3.2rem;
+  border-radius: 4px;
 }

@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
-  background-color: var(--color-sage);
+  color: var(--color-gray-6);
+
   position: sticky;
   top: 0;
   z-index: 10;
+  padding-bottom: 2rem;
 
   .initials {
-    color: var(--color-gray);
+    color: var(--color-opal);
     font-weight: bold;
     font-size: 1.8rem;
   }

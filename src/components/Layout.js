@@ -8,9 +8,9 @@ export default function Layout({ children }) {
     <div className="layout">
       <Navbar />
       <div className="content">{children}</div>
-      <footer>
+      {/* <footer>
         <p>Designed & Developed by Alessia Piscopo © 2022 </p>
-      </footer>
+      </footer> */}
     </div>
   );
 }
