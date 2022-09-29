@@ -46,16 +46,16 @@ html {
 }
 
 body {
-  /* border: 2rem solid var(--color-opal-1); */
-  /* padding: 2rem; */
-
   background-color: var(--bg-color);
-
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.25;
   color: var(--text-color-black);
   -webkit-font-smoothing: antialiased;
+}
+
+.content {
+  padding: 0 2rem;
 }
 
 button {

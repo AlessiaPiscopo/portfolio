@@ -9,11 +9,27 @@ export default function Footer() {
     <StyledFooter>
       <p>Copyright 2022 © Alessia Piscopo</p>
 
+      {/* make icon links accessible using aria-hidden and a "visually-hidden" class selector: https://a11y-101.com/development/icons-and-links */}
       <IconsSection>
-        <BsLinkedin className="socials-icon" />
-        <BsGithub className="socials-icon" />
-        <BsFacebook className="socials-icon" />
-        <BsInstagram className="socials-icon" />
+        <a href="https://www.linkedin.com/in/alessiapiscopo/" target="_blank">
+          <BsLinkedin className="socials-icon" aria-hidden="true" />
+          <span class="visually-hidden">LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/AlessiaPiscopo" target="_blank">
+          <BsGithub className="socials-icon" aria-hidden="true" />
+          <span class="visually-hidden">Github</span>
+        </a>
+
+        <a href="https://www.facebook.com/alessia.piscopo.54" target="_blank">
+          <BsFacebook className="socials-icon" aria-hidden="true" />
+          <span class="visually-hidden">Facebook</span>
+        </a>
+
+        <a href="https://www.instagram.com/alepiscopo/" target="_blank">
+          <BsInstagram className="socials-icon" aria-hidden="true" />
+          <span class="visually-hidden">Instagram</span>
+        </a>
       </IconsSection>
     </StyledFooter>
   );

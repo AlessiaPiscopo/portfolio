@@ -6,7 +6,7 @@ export const StyledNavbar = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
-  padding-bottom: 2rem;
+  padding: 1.2rem 2rem;
 
   .initials {
     color: var(--color-opal);

@@ -5,7 +5,7 @@ import {
   Name,
   Title,
   Blurb,
-  Buttons,
+  ButtonsSection,
   ContactBtn,
   SeeMyWorkBtn,
   StyledBsArrowRightShort,
@@ -33,13 +33,13 @@ export default function Hero() {
         </Blurb>
       </section>
 
-      <Buttons>
+      <ButtonsSection>
         <ContactBtn className="btn">Contact me</ContactBtn>
         <SeeMyWorkBtn className="btn">
           See my work
           <StyledBsArrowRightShort />
         </SeeMyWorkBtn>
-      </Buttons>
+      </ButtonsSection>
 
       <Location>📍 Montreal, QC Canada</Location>
     </StyledHero>

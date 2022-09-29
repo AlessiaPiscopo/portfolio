@@ -31,7 +31,7 @@ export const Blurb = styled.article`
   }
 `;
 
-export const Buttons = styled.section`
+export const ButtonsSection = styled.section`
   margin: 2.4rem 0;
   display: flex;
   gap: 1.6rem;
