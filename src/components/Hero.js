@@ -23,6 +23,8 @@ import { BsLinkedin, BsGithub, BsFacebook, BsInstagram } from "react-icons/bs";
 
 // TODO: make emojis bigger .emoji font-size
 
+// TODO: add down arrow icon at end
+
 export default function Hero() {
   return (
     <StyledHero className="hero">

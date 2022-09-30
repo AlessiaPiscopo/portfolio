@@ -62,6 +62,7 @@ export const IntroText = styled.section`
   flex-direction: column;
   gap: 1.2rem;
   margin-bottom: 2.4rem;
+  font-size: ;
 `;
 
 // ---- LOCATION & LEARN MORE
@@ -71,6 +72,12 @@ export const LocationAndLearnMore = styled.span`
   gap: 2.4rem;
   align-items: center;
   margin-bottom: 2.4rem;
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
 `;
 
 export const Location = styled.p`
