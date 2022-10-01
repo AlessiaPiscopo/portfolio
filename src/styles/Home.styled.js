@@ -1,41 +1,56 @@
 import styled from "styled-components";
 
-export const StyledHomePage = styled.main`
-  .projects-section {
-    /* Texture over bg? */
-    background-color: #e4eae9;
-    padding: 2rem;
+export const StyledHomePage = styled.main``;
+
+// TODO: use props to change section background colors
+export const PageSection = styled.article`
+  /* Texture over bg? */
+  background-color: #e4eae9;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  header {
+    text-align: center;
+    padding: 1.6rem 0;
+  }
+
+  h1 {
+    margin-bottom: 0.8rem;
+  }
+
+  /* TODO: use clamp? */
+  .section-intro {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 2.4rem;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    header {
-      text-align: center;
-      padding: 1.6rem 0;
-    }
-
-    h1 {
-      margin-bottom: 0.8rem;
-    }
-
-    /* TODO: use clamp? */
-    .section-intro {
-      text-align: center;
-      max-width: 800px;
-      margin-bottom: 2.4rem;
-    }
-
-    .project-cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 3.2rem;
-    }
+    gap: 0.8rem;
   }
 `;
 
-export const ProjectCard = styled.article`
+// ---- PROJECTS
+export const ProjectsSection = styled.section`
+  .projects-section,
+  .project-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+  }
+`;
+
+// ---- SKILLS & TOOLS
+export const SkillsAndToolsSection = styled.section`
+  /* TODO: use texture as bg image */
+  /* background-color: var(--color-gray-0); */
+`;
+
+export const ProjectCard = styled.div`
   /* border: 1px solid red; */
   background-color: rgb(248, 249, 250, 60%);
   padding: 1.6rem;

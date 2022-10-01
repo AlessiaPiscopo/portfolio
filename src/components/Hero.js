@@ -22,8 +22,8 @@ import { BsLinkedin, BsGithub, BsFacebook, BsInstagram } from "react-icons/bs";
 // Note: Make icon links accessible using aria-hidden and a "visually-hidden" class selector: https://a11y-101.com/development/icons-and-links
 
 // TODO: make emojis bigger .emoji font-size
-
 // TODO: add down arrow icon at end
+// TODO: add illustration/pattern/shapes to bulk up profile picture (left side of page looks too empty)
 
 export default function Hero() {
   return (
