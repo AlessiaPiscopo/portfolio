@@ -10,8 +10,4 @@ export const StyledFooter = styled.footer`
   margin-top: auto;
 
   padding: 1.6rem 2rem;
-
-  .copyright-symbol {
-    font-size: 1.6rem;
-  }
 `;

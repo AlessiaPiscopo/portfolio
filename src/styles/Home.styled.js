@@ -10,13 +10,27 @@ export const StyledHomePage = styled.main`
     align-items: center;
     justify-content: center;
 
-    h1 {
-      margin-bottom: 1.2rem;
+    header {
+      text-align: center;
+      padding: 1.6rem 0;
     }
 
-    .subheading {
+    h1 {
+      margin-bottom: 0.8rem;
+    }
+
+    /* TODO: use clamp? */
+    .section-intro {
       text-align: center;
-      margin-bottom: 1.2rem;
+      max-width: 800px;
+      margin-bottom: 2.4rem;
+    }
+
+    .project-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3.2rem;
     }
   }
 `;
@@ -31,28 +45,34 @@ export const ProjectCard = styled.article`
   .project-info {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.6rem;
 
     .project-preview-image {
-      background-color: aliceblue;
+      background-color: grey;
       width: 100%;
       height: 150px;
       border-radius: 20px;
+      margin-bottom: 1.2rem;
     }
 
     .project-name {
+      font-family: "Roboto Mono", monospace;
       font-size: 2rem;
+      margin-bottom: 0.8rem;
+      text-align: center;
     }
 
     .stack-list {
       /* width: 100%; */
-      font-weight: bold;
-      color: var(--color-gray-6);
       display: flex;
       flex-wrap: wrap;
     }
     .stack-list-item {
-      margin-right: 1.2rem;
+      margin: 0 0.8rem 0.4rem 0;
+      background-color: var(--color-gray-3);
+      color: var(--color-gray-6);
+      border-radius: 50px;
+      padding: 0.4rem 1.2rem;
     }
     .project-description {
     }

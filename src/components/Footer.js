@@ -4,10 +4,9 @@ import { StyledFooter } from "../styles/Footer.styled";
 export default function Footer() {
   return (
     <StyledFooter>
-      <p>
-        Copyright 2022 <span className="copyright-symbol">©</span> Alessia
-        Piscopo
-      </p>
+      <a href="https://github.com/AlessiaPiscopo/portfolio" target="_blank">
+        <p>Designed & Built by Alessia Piscopo</p>
+      </a>
     </StyledFooter>
   );
 }

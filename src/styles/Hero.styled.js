@@ -62,7 +62,6 @@ export const IntroText = styled.section`
   flex-direction: column;
   gap: 1.2rem;
   margin-bottom: 2.4rem;
-  font-size: ;
 `;
 
 // ---- LOCATION & LEARN MORE

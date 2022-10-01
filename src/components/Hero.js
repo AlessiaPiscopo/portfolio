@@ -28,7 +28,6 @@ import { BsLinkedin, BsGithub, BsFacebook, BsInstagram } from "react-icons/bs";
 export default function Hero() {
   return (
     <StyledHero className="hero">
-      {/* <div className="hero-content"> */}
       <ProfilePic src="/profile-pic-round.png" alt="profile picture" />
 
       <Intro>
@@ -38,7 +37,7 @@ export default function Hero() {
         <IntroText>
           <p>
             Recent Web Development grad 🎓, urban beekeeper 🐝, and creative
-            thinker 🌸.
+            thinker with a passion for learning 🌸.
           </p>
           <p>
             I particularly love Frontend Development & UI/UX Design and am
@@ -85,7 +84,6 @@ export default function Hero() {
           </a>
         </SocialsIcons>
       </Intro>
-      {/* </div> */}
     </StyledHero>
   );
 }
