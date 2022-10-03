@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <a href="https://github.com/AlessiaPiscopo/portfolio" target="_blank">
-        <p>Designed & Built by Alessia Piscopo</p>
+        <p>Designed & Developed by Alessia Piscopo</p>
       </a>
     </StyledFooter>
   );

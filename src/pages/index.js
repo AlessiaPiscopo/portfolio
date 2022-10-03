@@ -9,19 +9,19 @@ import {
   SkillsAndToolsSection,
 } from "../styles/Home.styled";
 
-// TODO: add 2-3 more project cards (including Webdev Toolbox, Sound Surround Landing Page, and tbd)
+// TODO: add 2-3 more project cards (including LesMontres, Webdev Toolbox, Sound Surround Landing Page, and tbd)
 
 export default function Home() {
   return (
     <Layout>
-      <StyledHomePage>
+      <StyledHomePage className="home">
         <Hero />
 
         {/* ---- PROJECTS */}
-        <PageSection>
-          <ProjectsSection className="projects-section">
-            <header>
-              <h1 className="section-title">Featured Work</h1>
+        <PageSection className="page-section">
+          <ProjectsSection id="projects" className="anchor projects-section">
+            <header className="section-header">
+              <h1 className="section-title">Featured Projects</h1>
               <div className="section-intro">
                 <p>
                   Check out some of my past projects and what I've been working
@@ -36,7 +36,7 @@ export default function Home() {
             </header>
 
             <div className="project-cards">
-              <ProjectCard>
+              <ProjectCard className="project-card">
                 {/* image placeholder */}
                 <div className="project-info">
                   <h2 className="project-name">La Casina</h2>
@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
               </ProjectCard>
 
-              <ProjectCard>
+              <ProjectCard className="project-card">
                 {/* image placeholder */}
                 <div className="project-info">
                   <h2 className="project-name">SoundWave</h2>
@@ -90,7 +90,33 @@ export default function Home() {
                 </div>
               </ProjectCard>
 
-              <ProjectCard>
+              <ProjectCard className="project-card">
+                {/* image placeholder */}
+                <div className="project-info">
+                  <h2 className="project-name">ApartmentSwap</h2>
+                  <img
+                    src="/apartmentswap-preview.jpg"
+                    alt="ApartmentSwap app preview image"
+                    className="project-preview-image"
+                  ></img>
+                  <ul className="stack-list">
+                    <li className="stack-list-item">HTML5</li>
+                    <li className="stack-list-item">CSS3</li>
+                    <li className="stack-list-item">React</li>
+                    <li className="stack-list-item">Styled Components</li>
+                    <li className="stack-list-item">Node</li>
+                  </ul>
+                  <p className="project-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sapiente asperiores blanditiis animi nam mollitia at aliquam
+                    quisquam velit exercitationem.
+                  </p>
+                  {/* preview/github links, details link */}
+                  {/* https://github.com/AlessiaPiscopo/apartment-swap */}
+                </div>
+              </ProjectCard>
+
+              <ProjectCard className="project-card">
                 {/* image placeholder */}
                 <div className="project-info">
                   <h2 className="project-name">ApartmentSwap</h2>
@@ -121,9 +147,9 @@ export default function Home() {
 
         {/* ---- SKILLS & TOOLS */}
         {/* include resume link; integrate into About? */}
-        <PageSection>
-          <SkillsAndToolsSection className="skills-and-tools-section">
-            <header>
+        <PageSection className="page-section">
+          <SkillsAndToolsSection className="anchor skills-and-tools-section">
+            <header className="section-header">
               <h1 className="section-title">Skills & Tools</h1>
               <div className="section-intro">
                 <p>
@@ -144,6 +170,48 @@ export default function Home() {
             </header>
           </SkillsAndToolsSection>
         </PageSection>
+
+        <div>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          fugit cupiditate officia maxime culpa iusto velit commodi, excepturi
+          aperiam non minus veniam deserunt reprehenderit tempore incidunt nemo
+          vel porro atque? Unde voluptate dolorem minus a quod nobis corrupti
+          eos, ipsam, iure saepe nostrum asperiores consectetur facilis fugit
+          exercitationem sunt voluptas officia. Harum rem maiores debitis a,
+          exercitationem libero doloribus aliquid iure deserunt perferendis
+          molestiae iste quisquam quibusdam culpa non, quae repellendus nostrum
+          ut. Tempore repudiandae molestiae corrupti architecto! Dolor, iste
+          incidunt non magni ex dolorum sed distinctio dicta a qui omnis
+          laudantium totam nobis, cumque consectetur ad in. Eos, minus.
+        </div>
+
+        <div>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          fugit cupiditate officia maxime culpa iusto velit commodi, excepturi
+          aperiam non minus veniam deserunt reprehenderit tempore incidunt nemo
+          vel porro atque? Unde voluptate dolorem minus a quod nobis corrupti
+          eos, ipsam, iure saepe nostrum asperiores consectetur facilis fugit
+          exercitationem sunt voluptas officia. Harum rem maiores debitis a,
+          exercitationem libero doloribus aliquid iure deserunt perferendis
+          molestiae iste quisquam quibusdam culpa non, quae repellendus nostrum
+          ut. Tempore repudiandae molestiae corrupti architecto! Dolor, iste
+          incidunt non magni ex dolorum sed distinctio dicta a qui omnis
+          laudantium totam nobis, cumque consectetur ad in. Eos, minus.
+        </div>
+
+        <div>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          fugit cupiditate officia maxime culpa iusto velit commodi, excepturi
+          aperiam non minus veniam deserunt reprehenderit tempore incidunt nemo
+          vel porro atque? Unde voluptate dolorem minus a quod nobis corrupti
+          eos, ipsam, iure saepe nostrum asperiores consectetur facilis fugit
+          exercitationem sunt voluptas officia. Harum rem maiores debitis a,
+          exercitationem libero doloribus aliquid iure deserunt perferendis
+          molestiae iste quisquam quibusdam culpa non, quae repellendus nostrum
+          ut. Tempore repudiandae molestiae corrupti architecto! Dolor, iste
+          incidunt non magni ex dolorum sed distinctio dicta a qui omnis
+          laudantium totam nobis, cumque consectetur ad in. Eos, minus.
+        </div>
       </StyledHomePage>
     </Layout>
   );

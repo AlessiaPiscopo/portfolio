@@ -2,70 +2,75 @@ import React from "react";
 import { Link } from "gatsby";
 import {
   StyledHero,
+  Bg,
+  HeroContent,
   ProfilePic,
-  Name,
-  Title,
   Intro,
-  IntroText,
-  LocationAndLearnMore,
-  SocialsIcons,
-  LearnMore,
   ButtonsSection,
   ContactBtn,
   SeeMyWorkBtn,
-  StyledBsArrowRightShort,
   Location,
+  SocialsIcons,
+  LearnMore,
+  StyledBsArrowRightShort,
 } from "../styles/Hero.styled";
 
 import { BsLinkedin, BsGithub, BsFacebook, BsInstagram } from "react-icons/bs";
 
 // Note: Make icon links accessible using aria-hidden and a "visually-hidden" class selector: https://a11y-101.com/development/icons-and-links
 
-// TODO: make emojis bigger .emoji font-size
-// TODO: add down arrow icon at end
-// TODO: add illustration/pattern/shapes to bulk up profile picture (left side of page looks too empty)
+// TODO: add illustrations
+// TODO: change learn more to a with id instead of Link
 
 export default function Hero() {
   return (
-    <StyledHero className="hero">
-      <ProfilePic src="/profile-pic-round.png" alt="profile picture" />
+    <>
+      <Bg className="bg"></Bg>
+      <StyledHero className="hero">
+        <HeroContent className="hero-content">
+          {/* TODO: add bees decoration */}
+          {/* <ProfilePic src="/profile-pic-round.png" alt="profile picture" /> */}
 
-      <Intro>
-        <Name>Alessia Piscopo</Name>
-        <Title>Full-Stack Web Developer</Title>
+          <Intro className="intro">
+            <h1 className="name">Alessia Piscopo</h1>
+            <h2 className="title">Full-Stack Web Developer</h2>
 
-        <IntroText>
-          <p>
-            Recent Web Development grad 🎓, urban beekeeper 🐝, and creative
-            thinker with a passion for learning 🌸.
-          </p>
-          <p>
-            I particularly love Frontend Development & UI/UX Design and am
-            currently seeking a new work or internship opportunity 🌱.
-          </p>
-        </IntroText>
+            <div className="description">
+              <p>
+                Recent Web Development grad <span className="emoji">🎓</span>,
+                urban beekeeper <span className="emoji">🐝</span>, and creative
+                thinker with a passion for learning{" "}
+                <span className="emoji">🌸</span>.
+              </p>
+              <p>
+                I particularly love Frontend Development & UI/UX Design and am
+                currently seeking a new work or internship opportunity{" "}
+                <span className="emoji">🌱</span>.{" "}
+                <LearnMore to="/about" className="learn-more-link">
+                  <span>Learn more</span>
+                  <StyledBsArrowRightShort className="arrow" />
+                </LearnMore>
+              </p>
+            </div>
+          </Intro>
 
-        <LocationAndLearnMore>
-          <Location>📍 Montreal, QC Canada</Location>
+          <ButtonsSection>
+            <Link to="/contact">
+              <ContactBtn className="btn">Contact me</ContactBtn>
+            </Link>
 
-          <LearnMore to="/about" className="learn-more-link">
-            <span>Learn more </span>
-            <StyledBsArrowRightShort className="arrow" />
-          </LearnMore>
-        </LocationAndLearnMore>
+            <Link to="/projects">
+              {/* TODO: add hand-drawn arrow down?  */}
+              <SeeMyWorkBtn className="btn">See my work</SeeMyWorkBtn>
+            </Link>
+          </ButtonsSection>
 
-        <ButtonsSection>
-          <Link to="/contact">
-            <ContactBtn className="btn">Contact me</ContactBtn>
-          </Link>
-
-          <Link to="/projects">
-            <SeeMyWorkBtn className="btn">See my work</SeeMyWorkBtn>
-          </Link>
-        </ButtonsSection>
-
-        <SocialsIcons>
-          👋
+          <Location className="location">
+            <span className="emoji">📍</span> Montreal, QC Canada
+          </Location>
+        </HeroContent>
+        <SocialsIcons className="socials-icons">
+          <span className="emoji">👋</span>
           <a href="https://www.linkedin.com/in/alessiapiscopo/" target="_blank">
             <BsLinkedin className="socials-icon" aria-hidden="true" />
             <span class="visually-hidden">LinkedIn</span>
@@ -83,8 +88,8 @@ export default function Hero() {
             <span class="visually-hidden">Instagram</span>
           </a>
         </SocialsIcons>
-      </Intro>
-    </StyledHero>
+      </StyledHero>
+    </>
   );
 }
 

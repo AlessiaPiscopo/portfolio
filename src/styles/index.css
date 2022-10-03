@@ -1,3 +1,5 @@
+/* TODO: use clamp() for responsive typography */
+
 /* FONT SIZE SYSTEM (rem) - 1rem = 10px
 1 / 1.2 / 1.4 / 1.6 / 1.8 / 2 / 2.4 / 3 / 3.6 / 4.4 / 5.2 / 6.2 / 7.4 / 8.6 / 9.8 */
 
@@ -12,13 +14,7 @@
   --color-white: #f8f9fa;
   --color-black: #181a1c;
 
-  --color-opal: #93ada9;
-
-  --color-opal-1: #bcccc9;
-
   /* grays */
-  --color-gray: #495056;
-
   --color-gray-0: #f8f9fa;
   --color-gray-1: #f1f3f5;
   --color-gray-2: #e9ecef;
@@ -26,11 +22,16 @@
   --color-gray-4: #ced4da;
   --color-gray-5: #adb5bd;
   --color-gray-6: #868e96;
+  --color-gray-7: #495057;
+  --color-gray-8: #343a40;
+  --color-opal: #93ada9;
+  --color-opal-1: #bcccc9;
+
+  --bg-color: var(--color-gray-1);
 
   --text-color-white: var(--color-white);
   --text-color-black: var(--color-black);
-
-  --bg-color: var(--color-gray-1);
+  --text-color-gray: var(--color-gray-7);
 }
 
 *,
@@ -101,5 +102,5 @@ h1 {
 }
 
 .emoji {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }

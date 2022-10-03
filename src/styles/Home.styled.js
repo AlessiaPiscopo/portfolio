@@ -1,32 +1,39 @@
 import styled from "styled-components";
 
-export const StyledHomePage = styled.main``;
+// TODO: use props to change section background colors?
+// TODO: Texture over bg?
 
-// TODO: use props to change section background colors
+export const StyledHomePage = styled.div``;
+
 export const PageSection = styled.article`
-  /* Texture over bg? */
   background-color: #e4eae9;
-  padding: 2rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 4.8rem 0;
 
-  header {
+  .anchor {
+    padding-top: 8.2rem;
+    margin-top: -8.2rem;
+  }
+
+  header.section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 1.6rem 0;
+    margin-bottom: 3.2rem;
   }
 
   h1 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
   }
 
-  /* TODO: use clamp? */
   .section-intro {
-    text-align: center;
-    max-width: 800px;
-    margin-bottom: 2.4rem;
-
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
