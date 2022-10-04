@@ -6,6 +6,11 @@ import styled from "styled-components";
 export const StyledHomePage = styled.div``;
 
 export const PageSection = styled.article`
+  .anchor {
+    padding-top: 12vh;
+    margin-top: -12vh;
+  }
+
   background-color: #e4eae9;
 
   display: flex;
@@ -14,11 +19,6 @@ export const PageSection = styled.article`
   justify-content: center;
   padding: 4.8rem 0;
 
-  .anchor {
-    padding-top: 8.2rem;
-    margin-top: -8.2rem;
-  }
-
   header.section-header {
     display: flex;
     flex-direction: column;
@@ -26,6 +26,7 @@ export const PageSection = styled.article`
     align-items: center;
     text-align: center;
     margin-bottom: 3.2rem;
+    padding: 0 2.4rem;
   }
 
   h1 {
@@ -40,6 +41,12 @@ export const PageSection = styled.article`
   }
 `;
 
+// ---- ABOUT
+export const AboutSection = styled.section`
+  background-color: red;
+  width: 100%;
+`;
+
 // ---- PROJECTS
 export const ProjectsSection = styled.section`
   .projects-section,
@@ -49,12 +56,6 @@ export const ProjectsSection = styled.section`
     flex-wrap: wrap;
     gap: 3.2rem;
   }
-`;
-
-// ---- SKILLS & TOOLS
-export const SkillsAndToolsSection = styled.section`
-  /* TODO: use texture as bg image */
-  /* background-color: var(--color-gray-0); */
 `;
 
 export const ProjectCard = styled.div`

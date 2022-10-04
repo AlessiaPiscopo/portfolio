@@ -4,9 +4,9 @@ import Layout from "../components/Layout";
 import {
   StyledHomePage,
   PageSection,
+  AboutSection,
   ProjectsSection,
   ProjectCard,
-  SkillsAndToolsSection,
 } from "../styles/Home.styled";
 
 // TODO: add 2-3 more project cards (including LesMontres, Webdev Toolbox, Sound Surround Landing Page, and tbd)
@@ -145,73 +145,37 @@ export default function Home() {
           </ProjectsSection>
         </PageSection>
 
-        {/* ---- SKILLS & TOOLS */}
-        {/* include resume link; integrate into About? */}
+        {/* ---- ABOUT */}
         <PageSection className="page-section">
-          <SkillsAndToolsSection className="anchor skills-and-tools-section">
+          <AboutSection>
             <header className="section-header">
-              <h1 className="section-title">Skills & Tools</h1>
+              <h1 className="section-title">About Me</h1>
               <div className="section-intro">
+                <p>
+                  Blah blah blah. I'm constantly building my knowledge of HTML,
+                  CSS, and JavaScript. Since these ultimately form the
+                  foundation on which web development is built upon, I believe
+                  they are especially important to master.
+                </p>
+              </div>
+            </header>
+
+            {/* ---- skills & tools */}
+            <div>
+              <h2 className="sub-section-title">Skills & Tools</h2>
+              <div className="sub-section-intro">
                 <p>
                   Here are some of my tech skills and tools I have experience
                   with.
-                </p>
-                <p>
-                  I'm constantly building my knowledge of HTML, CSS, and
-                  JavaScript. Since these ultimately form the foundation on
-                  which web development is built upon, I believe they are
-                  especially important to master.
                 </p>
                 <p>
                   I'm also currently learning TypeScript and familiarizing
                   myself with Web Content Accessibility Guidelines (WCAG).
                 </p>
               </div>
-            </header>
-          </SkillsAndToolsSection>
+            </div>
+          </AboutSection>
         </PageSection>
-
-        <div>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          fugit cupiditate officia maxime culpa iusto velit commodi, excepturi
-          aperiam non minus veniam deserunt reprehenderit tempore incidunt nemo
-          vel porro atque? Unde voluptate dolorem minus a quod nobis corrupti
-          eos, ipsam, iure saepe nostrum asperiores consectetur facilis fugit
-          exercitationem sunt voluptas officia. Harum rem maiores debitis a,
-          exercitationem libero doloribus aliquid iure deserunt perferendis
-          molestiae iste quisquam quibusdam culpa non, quae repellendus nostrum
-          ut. Tempore repudiandae molestiae corrupti architecto! Dolor, iste
-          incidunt non magni ex dolorum sed distinctio dicta a qui omnis
-          laudantium totam nobis, cumque consectetur ad in. Eos, minus.
-        </div>
-
-        <div>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          fugit cupiditate officia maxime culpa iusto velit commodi, excepturi
-          aperiam non minus veniam deserunt reprehenderit tempore incidunt nemo
-          vel porro atque? Unde voluptate dolorem minus a quod nobis corrupti
-          eos, ipsam, iure saepe nostrum asperiores consectetur facilis fugit
-          exercitationem sunt voluptas officia. Harum rem maiores debitis a,
-          exercitationem libero doloribus aliquid iure deserunt perferendis
-          molestiae iste quisquam quibusdam culpa non, quae repellendus nostrum
-          ut. Tempore repudiandae molestiae corrupti architecto! Dolor, iste
-          incidunt non magni ex dolorum sed distinctio dicta a qui omnis
-          laudantium totam nobis, cumque consectetur ad in. Eos, minus.
-        </div>
-
-        <div>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          fugit cupiditate officia maxime culpa iusto velit commodi, excepturi
-          aperiam non minus veniam deserunt reprehenderit tempore incidunt nemo
-          vel porro atque? Unde voluptate dolorem minus a quod nobis corrupti
-          eos, ipsam, iure saepe nostrum asperiores consectetur facilis fugit
-          exercitationem sunt voluptas officia. Harum rem maiores debitis a,
-          exercitationem libero doloribus aliquid iure deserunt perferendis
-          molestiae iste quisquam quibusdam culpa non, quae repellendus nostrum
-          ut. Tempore repudiandae molestiae corrupti architecto! Dolor, iste
-          incidunt non magni ex dolorum sed distinctio dicta a qui omnis
-          laudantium totam nobis, cumque consectetur ad in. Eos, minus.
-        </div>
       </StyledHomePage>
     </Layout>
   );

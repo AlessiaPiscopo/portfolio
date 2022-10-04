@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
-  color: var(--color-gray-6);
-  background-color: #f8f9fa;
+  color: var(--text-color-gray);
+  background-color: #fff;
+  /* lighter? */
+  /* background-color: var(--color-opal-1); */
   position: sticky;
   top: 0;
   z-index: 10;
-  height: 6.5vh;
-  /* padding: 1.6rem 0; */
+  height: 8vh;
+  padding: 0 3.2rem;
 
   .initials {
-    color: var(--color-opal);
+    color: var(--color-gray-6);
     font-family: "Inter", Helvetica, sans-serif;
     font-size: 1.8rem;
     font-weight: bold;
@@ -20,16 +22,13 @@ export const StyledNavbar = styled.div`
 export const Nav = styled.nav`
   display: flex;
   height: 100%;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* gap: 1.2rem; */
+  justify-content: space-between;
 `;
 
 export const MenuContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0.8rem;
   gap: 3.5vw;
 `;
