@@ -6,51 +6,47 @@ import styled from "styled-components";
 export const StyledHomePage = styled.div``;
 
 export const PageSection = styled.article`
-  .anchor {
-    padding-top: 12vh;
-    margin-top: -12vh;
-  }
-
+  border: 2px solid green;
   background-color: #e4eae9;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4.8rem 0;
+  .anchor {
+    padding-top: 24rem;
+    margin-top: -24rem;
+  }
 
-  header.section-header {
+  .section-header {
+    /* border: 2px solid purple; */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 3.2rem;
-    padding: 0 2.4rem;
+    padding: 4.8rem 3.2rem;
+    /* padding: 4.8rem 2.4rem 3.2rem 2.4rem; */
+    /* margin-bottom: 3.2rem; */
   }
 
   h1 {
-    margin-bottom: 1.2rem;
+    /* border: 2px solid green; */
+    padding-bottom: 1.2rem;
   }
 
   .section-intro {
-    max-width: 600px;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
   }
 `;
 
-// ---- ABOUT
-export const AboutSection = styled.section`
-  background-color: red;
-  width: 100%;
-`;
-
 // ---- PROJECTS
-export const ProjectsSection = styled.section`
-  .projects-section,
+export const ProjectsList = styled.section`
+  /* background-color: #e4eae9; */
+
+  .projects-list,
   .project-cards {
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -64,6 +60,7 @@ export const ProjectCard = styled.div`
   padding: 1.6rem;
   max-width: 275px;
   border-radius: 20px;
+  font-size: 1.4rem;
 
   .project-info {
     display: flex;
@@ -71,10 +68,11 @@ export const ProjectCard = styled.div`
     gap: 0.6rem;
 
     .project-preview-image {
-      background-color: grey;
-      width: 100%;
-      height: 150px;
+      /* background-color: grey; */
+      width: 240px;
+      /* height: 50%; */
       border-radius: 20px;
+      margin: auto;
       margin-bottom: 1.2rem;
     }
 
@@ -100,4 +98,10 @@ export const ProjectCard = styled.div`
     .project-description {
     }
   }
+`;
+
+// ---- ABOUT
+export const AboutSection = styled.section`
+  background-color: red;
+  width: 100%;
 `;

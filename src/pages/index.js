@@ -5,7 +5,7 @@ import {
   StyledHomePage,
   PageSection,
   AboutSection,
-  ProjectsSection,
+  ProjectsList,
   ProjectCard,
 } from "../styles/Home.styled";
 
@@ -18,33 +18,34 @@ export default function Home() {
         <Hero />
 
         {/* ---- PROJECTS */}
-        <PageSection className="page-section">
-          <ProjectsSection id="projects" className="anchor projects-section">
-            <header className="section-header">
-              <h1 className="section-title">Featured Projects</h1>
-              <div className="section-intro">
-                <p>
-                  Check out some of my past projects and what I've been working
-                  on.
-                </p>
-                <p>
-                  I currently have some freelance projects in the works and I
-                  also constantly build personal educational projects to keep
-                  learning and strengthen my skills.
-                </p>
-              </div>
-            </header>
+        <PageSection className="anchor page-section" id="projects">
+          <div className=" section-header">
+            <h1 className="section-title">Featured Projects</h1>
+            <div className="section-intro">
+              <p>
+                Check out some of my past projects and what I've been working
+                on.
+              </p>
+              <p>
+                I currently have some freelance projects in the works and I'm
+                also constantly building personal projects to keep learning and
+                strengthen my skills.
+              </p>
+            </div>
+          </div>
 
+          <ProjectsList className="projects-list">
             <div className="project-cards">
               <ProjectCard className="project-card">
-                {/* image placeholder */}
                 <div className="project-info">
                   <h2 className="project-name">La Casina</h2>
+
                   <img
                     src="/lacasina-preview.png"
                     alt="La Casina website preview image"
                     className="project-preview-image"
-                  ></img>
+                  />
+
                   <ul className="stack-list">
                     <li className="stack-list-item">HTML5</li>
                     <li className="stack-list-item">CSS3</li>
@@ -71,7 +72,7 @@ export default function Home() {
                     src="/soundwave-preview.png"
                     alt="SoundWave project preview image"
                     className="project-preview-image"
-                  ></img>
+                  />
                   <ul className="stack-list">
                     <li className="stack-list-item">HTML5</li>
                     <li className="stack-list-item">CSS3</li>
@@ -98,7 +99,7 @@ export default function Home() {
                     src="/apartmentswap-preview.jpg"
                     alt="ApartmentSwap app preview image"
                     className="project-preview-image"
-                  ></img>
+                  />
                   <ul className="stack-list">
                     <li className="stack-list-item">HTML5</li>
                     <li className="stack-list-item">CSS3</li>
@@ -142,7 +143,7 @@ export default function Home() {
                 </div>
               </ProjectCard>
             </div>
-          </ProjectsSection>
+          </ProjectsList>
         </PageSection>
 
         {/* ---- ABOUT */}

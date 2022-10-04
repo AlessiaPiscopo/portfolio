@@ -80,10 +80,13 @@ li {
 h1,
 h2 {
   font-family: "Inter", Helvetica, sans-serif;
+  letter-spacing: -0.08rem;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 .btn {
@@ -92,7 +95,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.5px;
 
-  padding: 1.2rem 2.4rem;
+  padding: 1.2rem 1.6rem;
   border-radius: 4px;
 }
 

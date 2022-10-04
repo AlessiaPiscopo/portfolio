@@ -1,70 +1,66 @@
 import styled from "styled-components";
-// import bgTexture from "../"
-import { Link } from "gatsby";
 import { FaArrowRight } from "react-icons/fa";
 
 export const StyledHero = styled.article`
-  /* border: 2px solid green; */
-  min-height: 50vh;
-  /* min-height: 60vh; */
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 3.2rem 4.8rem 3.2rem;
-  background-color: #fff;
-`;
-
-// illustration and content right container
-export const HeroContainer = styled.div`
-  /* border: 2px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4.8rem;
+  padding: 2.4rem;
+  min-height: 70vh;
+  background-color: #fff;
 `;
 
 export const HeroIllustration = styled.img`
-  /* border: 2px solid blue; */
-  max-height: 500px;
+  /* width: 30%; */
+  max-width: 400px;
+
+  @media screen and (max-width: 992px) {
+    display: none;
+    /* background-image: url("/hero-illustration.png");
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    opacity: 0.2; */
+  }
 `;
 
 export const HeroContentRight = styled.article`
-  /* border: 2px solid yellow; */
-
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  padding: 2.4rem 0;
-
-  .name {
-    font-size: 3.5rem;
-    letter-spacing: -0.08rem;
-  }
 
   .title {
     color: var(--color-opal);
     font-size: 3.5rem;
-    letter-spacing: -0.08rem;
   }
 
   .description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
     padding: 1.2rem 0;
+
+    p:first-of-type {
+      padding-bottom: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    align-items: center;
+
+    .name,
+    .title,
+    .description {
+      text-align: center;
+    }
   }
 `;
 
-// ---- CALLS TO ACTION
-export const CallsToAction = styled.section`
+export const ButtonsSection = styled.section`
   display: flex;
   align-items: center;
   gap: 1.6rem;
   padding: 2.4rem 0;
 
-  .learn-more-btn {
+  .contact-me-btn {
     border: 2px solid var(--color-gray-6);
     background-color: transparent;
     color: var(--color-gray-6);
@@ -131,18 +127,6 @@ export const StyledBsArrowRightShort = styled(FaArrowRight)`
 //   width: 150px;
 //   height: 150px;
 //   border-radius: 50%;
-// `;
-
-// export const Bg = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   /* background-image: url("/texture-gray.jpeg"); */
-//   position: absolute;
-//   left: 0;
-//   z-index: -1;
-//   filter: brightness(120%) grayscale(100%);
-
-//   opacity: 0.25;
 // `;
 
 // ---- HERO BOTTOM

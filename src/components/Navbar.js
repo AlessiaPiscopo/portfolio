@@ -4,7 +4,7 @@ import { StyledNavbar, Nav, MenuContainer } from "../styles/Navbar.styled";
 
 export default function Navbar() {
   return (
-    <StyledNavbar>
+    <StyledNavbar className="navbar">
       <Nav className="nav">
         <Link to="/" className="initials">
           AP
