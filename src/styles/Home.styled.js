@@ -1,37 +1,29 @@
 import styled from "styled-components";
 
-// TODO: use props to change section background colors?
-// TODO: Texture over bg?
-
 export const StyledHomePage = styled.div``;
 
+// ---- page section container
+// TODO: move to separate component when starting to fill in markdown data
 export const PageSection = styled.article`
-  border: 2px solid green;
   background-color: #e4eae9;
-
-  .anchor {
-    padding-top: 24rem;
-    margin-top: -24rem;
-  }
+  padding: 3.2rem 3.2rem 1.6rem 3.2rem;
 
   .section-header {
-    /* border: 2px solid purple; */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 4.8rem 3.2rem;
-    /* padding: 4.8rem 2.4rem 3.2rem 2.4rem; */
-    /* margin-bottom: 3.2rem; */
-  }
+    padding-bottom: 2.4rem;
 
+    /* make anchor account for navbar height */
+    padding-top: 4.8rem;
+    margin-top: -4.8rem;
+  }
   h1 {
-    /* border: 2px solid green; */
-    padding-bottom: 1.2rem;
+    font-size: 3rem;
+    padding: 1.2rem 0;
   }
-
   .section-intro {
     max-width: 650px;
     display: flex;
@@ -41,24 +33,19 @@ export const PageSection = styled.article`
 `;
 
 // ---- PROJECTS
-export const ProjectsList = styled.section`
+export const ProjectsList = styled.ul`
   /* background-color: #e4eae9; */
-
-  .projects-list,
-  .project-cards {
-    /* border: 2px solid blue; */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3.2rem;
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.2rem;
 `;
 
-export const ProjectCard = styled.div`
-  /* border: 1px solid red; */
+// TODO: add card hover effect animation
+export const ProjectCard = styled.li`
   background-color: rgb(248, 249, 250, 60%);
   padding: 1.6rem;
-  max-width: 275px;
+  max-width: 255px;
   border-radius: 20px;
   font-size: 1.4rem;
 
@@ -67,41 +54,62 @@ export const ProjectCard = styled.div`
     flex-direction: column;
     gap: 0.6rem;
 
-    .project-preview-image {
-      /* background-color: grey; */
-      width: 240px;
-      /* height: 50%; */
-      border-radius: 20px;
-      margin: auto;
-      margin-bottom: 1.2rem;
-    }
-
     .project-name {
+      /* border: 2px solid red; */
       font-family: "Roboto Mono", monospace;
-      font-size: 2rem;
-      margin-bottom: 0.8rem;
+      color: var(--text-color-gray);
+      font-size: 1.8rem;
       text-align: center;
     }
 
-    .stack-list {
-      /* width: 100%; */
-      display: flex;
-      flex-wrap: wrap;
+    .project-preview-image {
+      width: 240px;
+      border-radius: 10px;
     }
-    .stack-list-item {
-      margin: 0 0.8rem 0.4rem 0;
-      background-color: var(--color-gray-3);
-      color: var(--color-gray-6);
-      border-radius: 50px;
-      padding: 0.4rem 1.2rem;
-    }
+
     .project-description {
+      font-size: 1.35rem;
+      /* padding-bottom: 0.8rem; */
+    }
+  }
+
+  .icon-links {
+    color: var(--color-gray-5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.2rem;
+    padding-right: 0.4rem;
+
+    .github-icon {
+      font-size: 1.8rem;
+    }
+    .external-link-icon {
+      font-size: 1.6rem;
+    }
+
+    .visually-hidden {
+      display: none;
     }
   }
 `;
 
+export const StackList = styled.ul`
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.6rem 0;
+`;
+
+export const StackListItem = styled.li`
+  background-color: var(--color-gray-3);
+  color: var(--color-gray-6);
+  border-radius: 50px;
+  padding: 0.4rem 1.2rem;
+`;
+
 // ---- ABOUT
 export const AboutSection = styled.section`
-  background-color: red;
   width: 100%;
 `;

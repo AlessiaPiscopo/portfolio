@@ -72,7 +72,7 @@ export const ButtonsSection = styled.section`
     color: var(--color-opal);
   }
 
-  .contact-me-link {
+  /* .contact-me-link {
     color: var(--color-gray-6);
     font-weight: bold;
     display: flex;
@@ -89,6 +89,11 @@ export const ButtonsSection = styled.section`
         transform: translate(0.8rem);
       }
     }
+  } */
+
+  @media screen and (max-width: 368px) {
+    flex-direction: column;
+    gap: 2.4rem;
   }
 `;
 
