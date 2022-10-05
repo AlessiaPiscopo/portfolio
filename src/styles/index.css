@@ -123,3 +123,7 @@ svg {
 .emoji {
   font-size: 2rem;
 }
+
+.visually-hidden {
+  display: none;
+}

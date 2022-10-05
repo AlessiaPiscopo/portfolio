@@ -5,8 +5,7 @@ export const StyledHomePage = styled.div``;
 // ---- page section container
 // TODO: move to separate component when starting to fill in markdown data
 export const PageSection = styled.article`
-  background-color: #e4eae9;
-  padding: 3.2rem 3.2rem 1.6rem 3.2rem;
+  padding: 3.2rem 0 1.6rem 0;
 
   .section-header {
     display: flex;
@@ -14,21 +13,29 @@ export const PageSection = styled.article`
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 2.4rem;
 
-    /* make anchor account for navbar height */
-    padding-top: 4.8rem;
+    /* make anchor account for navbar height (by offsetting padding-top with negative margin-top) */
+    padding: 4.8rem 2.4rem 2.4rem 2.4rem;
     margin-top: -4.8rem;
   }
   h1 {
     font-size: 3rem;
     padding: 1.2rem 0;
   }
+
+  h2 {
+    padding: 0.8rem 0;
+  }
+
   .section-intro {
     max-width: 650px;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+  }
+
+  .projects-section {
+    background-color: #e4eae9;
   }
 `;
 
@@ -39,6 +46,7 @@ export const ProjectsList = styled.ul`
   justify-content: center;
   flex-wrap: wrap;
   gap: 3.2rem;
+  padding-bottom: 2.4rem;
 `;
 
 // TODO: add card hover effect animation
@@ -87,10 +95,6 @@ export const ProjectCard = styled.li`
     .external-link-icon {
       font-size: 1.6rem;
     }
-
-    .visually-hidden {
-      display: none;
-    }
   }
 `;
 
@@ -99,7 +103,6 @@ export const StackList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  padding: 0.6rem 0;
 `;
 
 export const StackListItem = styled.li`
@@ -111,9 +114,10 @@ export const StackListItem = styled.li`
 
 // ---- ABOUT
 export const AboutSection = styled.section`
+  position: relative;
+
   .skills-and-tools {
-    border: 2px solid red;
-    /* width: 80vw; */
+    /* border: 2px solid red; */
 
     text-align: center;
 
@@ -123,6 +127,13 @@ export const AboutSection = styled.section`
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 2.4rem;
+
+      h3 {
+        border: 2px solid yellow;
+        margin-bottom: 0.8rem;
+        font-size: 1.6rem;
+      }
     }
 
     .frontend,
@@ -134,6 +145,9 @@ export const AboutSection = styled.section`
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+      gap: 0.8rem;
+
+      margin-bottom: 1.6rem;
     }
 
     .tools {
@@ -141,13 +155,14 @@ export const AboutSection = styled.section`
     }
 
     li {
+      /* border: 2px solid black; */
       color: var(--text-color-gray);
       background-color: #f0f3f3;
-      font-size: 1.4rem;
+      font-size: 1.8rem;
 
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.8rem;
 
       /* prevent line breaks inside the item */
       flex-shrink: 0;

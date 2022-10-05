@@ -11,6 +11,8 @@ import {
   StackListItem,
 } from "../styles/Home.styled";
 
+import BackgroundTexture from "../components/BackgroundTexture";
+
 // icons
 import { FiGithub } from "react-icons/fi";
 import {
@@ -26,9 +28,7 @@ import {
   FaMarkdown,
   FaNpm,
 } from "react-icons/fa";
-
 import { GrGatsbyjs } from "react-icons/gr";
-
 import {
   SiExpress,
   SiMongodb,
@@ -40,10 +40,11 @@ import {
   SiAdobepremierepro,
   SiGit,
 } from "react-icons/si";
-
 import { MdOutlineAccessibilityNew } from "react-icons/md";
 
 // TODO: add 2-3 more project cards (including LesMontres, Webdev Toolbox, Sound Surround Landing Page, and tbd)
+
+// TODO: edit/shorten About Me blurb
 
 export default function Home() {
   return (
@@ -52,7 +53,7 @@ export default function Home() {
         <Hero />
 
         {/* ---- PROJECTS */}
-        <PageSection className="page-section">
+        <PageSection className="projects-section">
           <div className="section-header" id="projects">
             <h1 className="section-title">Featured Projects</h1>
             <div className="section-intro">
@@ -149,30 +150,66 @@ export default function Home() {
 
         {/* ---- ABOUT */}
         <PageSection className="page-section">
-          <AboutSection>
+          <AboutSection className="about-section">
+            <BackgroundTexture />
             <header id="about" className="section-header">
               <h1 className="section-title">About Me</h1>
               <div className="section-intro">
                 <p>
-                  Blah blah blah. I'm constantly building my knowledge of HTML,
-                  CSS, and JavaScript. Since these ultimately form the
-                  foundation on which web development is built upon, I believe
-                  they are especially important to master.
+                  Hi 👋 I am a recent Concordia University Full-Stack Web
+                  Development grad. I'm particularly interested in Frontend
+                  Development and am currently learning more about UI/UX Design.
+                </p>
+
+                <p>
+                  I am also a beekeeper 🐝 and film photographer 📷 . I travel
+                  to Italy whenever I can to work for La Casina, my family's
+                  farm and olive oil business 🌿. After tending to the animals
+                  and picking olives in the groves, I focus on graphic design,
+                  branding, and video editing for the company.
+                </p>
+
+                <p>
+                  I have a Bachelor of Arts with Distinction in Honours History
+                  with a Minor in Law & Society. I also have years of customer
+                  service experience, working primarily as a Pharmacy Technician
+                  in a community pharmacy during my studies.
+                </p>
+
+                <p>
+                  But why webdev after all that? Always had a passion blahblah
+                  since the days where you could tinker with MySpace pages!
+                </p>
+
+                <p>
+                  Overall, I'm a creative thinker with a passion for learning
+                  and a knack for problem-solving. I believe I definitely have
+                  what it takes to thrive in the tech industry!
+                </p>
+                <p>
+                  I'm constantly building my knowledge of HTML, CSS, and
+                  JavaScript. Since these ultimately form the foundation on
+                  which web development is built upon, I believe they are
+                  especially important to master.
                 </p>
               </div>
             </header>
 
-            {/* ---- skills & tools */}
+            {/* ---- Skills & Tools subsection */}
             <article className="skills-and-tools">
-              <h2>Skills & Tools</h2>
-              <p>
-                Here are some of my tech skills and tools I have experience
-                with.
-              </p>
-              <p>
-                I'm also currently learning TypeScript and familiarizing myself
-                with Web Content Accessibility Guidelines (WCAG).
-              </p>
+              <header className="section-header">
+                <h2 className="section-title">Skills & Tools</h2>
+                <div className="section-intro">
+                  <p>
+                    Here are some of my tech skills and tools I have experience
+                    with.
+                  </p>
+                  <p>
+                    I'm also currently learning TypeScript and familiarizing
+                    myself with Web Content Accessibility Guidelines (WCAG).
+                  </p>
+                </div>
+              </header>
 
               <StackList className="skills-and-tools-list">
                 <h3>Frontend</h3>
