@@ -93,17 +93,20 @@ export const ButtonsSection = styled.section`
 
   @media screen and (max-width: 368px) {
     flex-direction: column;
-    gap: 2.4rem;
+    /* gap: 2.4rem; */
+    width: 300px;
+
+    .contact-me-btn,
+    .see-my-work-btn {
+      width: 85vw;
+    }
   }
 `;
 
-// ---- LOCATION
 export const Location = styled.p`
   color: var(--color-gray-6);
-  /* padding: 1.2rem 0; */
 `;
 
-// ---- SOCIALS ICONS
 export const SocialsIcons = styled.div`
   color: var(--color-gray-5);
   display: flex;

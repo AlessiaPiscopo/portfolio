@@ -46,13 +46,13 @@ export default function Hero() {
           </Location>
 
           <ButtonsSection>
-            <Link to="/contact">
-              <button className="btn contact-me-btn">Contact me</button>
-            </Link>
+            <button className="btn contact-me-btn">
+              <a href="#contact">Contact me</a>
+            </button>
 
-            <Link to="/projects">
-              <a className="btn see-my-work-btn">See my work</a>
-            </Link>
+            <button className="btn see-my-work-btn">
+              <a href="#projects">See my work</a>
+            </button>
           </ButtonsSection>
 
           <SocialsIcons className="socials-icons">

@@ -60,6 +60,7 @@ export const ProjectCard = styled.li`
       color: var(--text-color-gray);
       font-size: 1.8rem;
       text-align: center;
+      padding-bottom: 0.4rem;
     }
 
     .project-preview-image {
@@ -69,17 +70,16 @@ export const ProjectCard = styled.li`
 
     .project-description {
       font-size: 1.35rem;
-      /* padding-bottom: 0.8rem; */
+      padding: 0 0.2rem;
     }
   }
 
   .icon-links {
     color: var(--color-gray-5);
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     gap: 1.2rem;
-    padding-right: 0.4rem;
+    padding-top: 0.6rem;
 
     .github-icon {
       font-size: 1.8rem;
@@ -111,5 +111,46 @@ export const StackListItem = styled.li`
 
 // ---- ABOUT
 export const AboutSection = styled.section`
-  width: 100%;
+  .skills-and-tools {
+    border: 2px solid red;
+    /* width: 80vw; */
+
+    text-align: center;
+
+    .skills-and-tools-list {
+      border: 2px solid green;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .frontend,
+    .backend,
+    .tools,
+    .currently-learning {
+      border: 2px solid blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .tools {
+      width: 75%;
+    }
+
+    li {
+      color: var(--text-color-gray);
+      background-color: #f0f3f3;
+      font-size: 1.4rem;
+
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+
+      /* prevent line breaks inside the item */
+      flex-shrink: 0;
+    }
+  }
 `;

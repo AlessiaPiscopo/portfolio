@@ -36,10 +36,11 @@ export const Nav = styled.nav`
 `;
 
 export const MenuContainer = styled.div`
-  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 25%;
   min-width: 225px;
-  max-width: 40vw;
+  max-width: 50vw;
 `;
