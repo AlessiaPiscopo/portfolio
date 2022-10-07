@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="hero-content-container">
         <ProfilePicture
           src="/profile-pic-round-scribbles-bees.png"
-          alt="flowers and leaves illustration"
+          alt="profile picture"
         ></ProfilePicture>
 
         <HeroContentRight className="hero-content-right">
@@ -43,7 +43,6 @@ export default function Hero() {
 
           <Location className="location">
             <span className="emoji pin-emoji">📍</span>
-            {/* <MdLocationOn className="location-pin-icon" /> */}
             Montreal, QC Canada
           </Location>
 
@@ -59,7 +58,6 @@ export default function Hero() {
 
           <SocialsIcons className="socials-icons">
             <span className="emoji link-emoji">🔗</span>
-            {/* <HiLink className="link-icon" /> */}
 
             {/* LinkedIn */}
             <a

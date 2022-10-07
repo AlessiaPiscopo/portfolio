@@ -12,16 +12,9 @@ export const StyledNavbar = styled.div`
   /* position nav in center of container */
   display: flex;
   align-items: center;
-
-  .logo-link {
-    .logo-image {
-      width: 45px;
-    }
-  }
 `;
 
 export const Nav = styled.nav`
-  /* border: 2px solid blue; */
   display: flex;
   width: 100%;
   align-items: center;

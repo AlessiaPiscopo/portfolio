@@ -8,6 +8,5 @@ export const StyledBackgroundTexture = styled.div`
   left: 0;
   z-index: -1;
   filter: brightness(120%) grayscale(100%);
-
   opacity: 0.25;
 `;

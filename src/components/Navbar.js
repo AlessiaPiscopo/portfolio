@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+
 import { StyledNavbar, Nav, MenuContainer } from "../styles/Navbar.styled";
 
 export default function Navbar() {

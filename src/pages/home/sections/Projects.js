@@ -1,14 +1,17 @@
 import React from "react";
 
-import PageSection from "../../../components/PageSection";
-import StackListItem from "../../../components/StackListItem";
-
+// style
 import {
   ProjectsSection,
   ProjectsList,
   ProjectCard,
 } from "../../../styles/Projects.styled";
 
+// components
+import PageSection from "../../../components/PageSection";
+import StackListItem from "../../../components/StackListItem";
+
+// icons
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 
@@ -56,7 +59,7 @@ export default function Projects() {
                 Canada.
               </p>
 
-              {/* icon links */}
+              {/* github & external link icons */}
               <div className="icon-links">
                 <a
                   href="https://github.com/AlessiaPiscopo/la-casina"
@@ -108,7 +111,7 @@ export default function Projects() {
                   </div>
                 </ProjectCard> */}
         </ProjectsList>
-      </ProjectsSection>{" "}
+      </ProjectsSection>
     </PageSection>
   );
 }

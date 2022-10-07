@@ -5,7 +5,6 @@ export const StyledHero = styled.article`
   align-items: center;
   justify-content: center;
   gap: 4.8rem;
-
   padding: 8rem 2.4rem;
 
   /* profile pic & content right */
@@ -14,12 +13,12 @@ export const StyledHero = styled.article`
     align-items: flex-start;
     justify-content: center;
     gap: 4.8rem;
-  }
 
-  @media screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 
@@ -38,10 +37,8 @@ export const HeroContentRight = styled.article`
   max-width: 600px;
 
   .name {
-    /* font-family: "Roboto Mono", monospace; */
     font-family: "Inter", monospace;
     font-size: 2.4rem;
-    /* letter-spacing: 0.5px; */
     padding-bottom: 0.2rem;
     color: var(--text-color-black);
   }
@@ -49,14 +46,10 @@ export const HeroContentRight = styled.article`
   .title {
     font-family: "Inter";
     color: var(--text-color-black);
-
-    /* text-transform: lowercase; */
     font-size: 3rem;
-    /* color: var(--color-opal); */
   }
 
   .description {
-    /* text-align: center; */
     padding: 1.2rem 0;
 
     p:first-of-type {
@@ -82,13 +75,8 @@ export const Location = styled.p`
   gap: 1.4rem;
   padding-top: 0.4rem;
 
-  /* .location-pin-icon {
-    font-size: 2.4rem;
-  } */
-
   .pin-emoji {
     font-size: 2rem;
-    /* padding-right: 0.6rem; */
   }
 `;
 
@@ -135,7 +123,6 @@ export const ButtonsSection = styled.section`
 
   @media screen and (max-width: 368px) {
     flex-direction: column;
-    /* gap: 2.4rem; */
     width: 300px;
 
     .contact-me-btn,
@@ -160,10 +147,6 @@ export const SocialsIcons = styled.div`
     font-size: 2rem;
     padding-right: 0.4rem;
   }
-
-  /* .link-icon {
-    font-size: 2.2rem;
-  } */
 
   .visually-hidden {
     display: none;

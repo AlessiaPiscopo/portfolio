@@ -4,8 +4,6 @@ import { StyledPageSection } from "../styles/PageSection.styled";
 
 export default function PageSection({ children }) {
   return (
-    <>
-      <StyledPageSection>{children}</StyledPageSection>
-    </>
+    <StyledPageSection className="page-section">{children}</StyledPageSection>
   );
 }

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const ProjectsSection = styled.section`
-  /* background-color: black; */
-`;
+export const ProjectsSection = styled.section``;
 
 // cards grid
 export const ProjectsList = styled.ul`

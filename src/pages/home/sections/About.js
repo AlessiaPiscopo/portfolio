@@ -36,7 +36,7 @@ import { MdOutlineAccessibilityNew } from "react-icons/md";
 
 export default function About() {
   return (
-    <PageSection className="page-section">
+    <PageSection>
       <AboutSection className="about-section">
         <header id="about" className="section-header">
           <h1 className="section-title">About Me</h1>
@@ -78,9 +78,10 @@ export default function About() {
             </div>
           </header>
 
-          <ul className="stack skills-and-tools-list">
+          <ul className="stack-list skills-and-tools-list">
             <div className="frontend">
               <h3>Frontend</h3>
+              <hr />
               <StackListItem>
                 <FaHtml5 />
                 HTML5
@@ -114,6 +115,7 @@ export default function About() {
 
             <div className="backend">
               <h3>Backend</h3>
+              <hr />
               <StackListItem>
                 <FaNodeJs />
                 Node
@@ -142,6 +144,7 @@ export default function About() {
 
             <div className="tools">
               <h3>Tools</h3>
+              <hr />
               <StackListItem>
                 <SiGit />
                 Git
@@ -185,6 +188,7 @@ export default function About() {
 
             <div className="currently-learning">
               <h3>Currently Learning</h3>
+              <hr />
               <StackListItem>
                 <SiTypescript />
                 TypeScript
