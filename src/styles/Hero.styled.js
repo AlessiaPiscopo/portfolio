@@ -133,7 +133,7 @@ export const ButtonsSection = styled.section`
 `;
 
 export const SocialsIcons = styled.div`
-  color: var(--color-gray-5);
+  color: var(--color-gray-6);
   display: flex;
   align-items: center;
   gap: 1.2rem;

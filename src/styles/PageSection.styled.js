@@ -17,7 +17,7 @@ export const StyledPageSection = styled.section`
     margin-top: -6rem;
   }
 
-  h1 {
+  h1.section-title {
     font-size: 3rem;
     padding: 1.2rem 0;
   }
@@ -30,5 +30,9 @@ export const StyledPageSection = styled.section`
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+
+    p:last-child {
+      padding-bottom: 1.2rem;
+    }
   }
 `;

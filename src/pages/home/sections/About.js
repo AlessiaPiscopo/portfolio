@@ -61,7 +61,7 @@ export default function About() {
           </div>
         </header>
 
-        <article className="skills-and-tools">
+        <article className="skills-and-tools-section">
           <header className="section-header">
             <h2 className="section-title">Skills & Tools</h2>
             <div className="section-intro">

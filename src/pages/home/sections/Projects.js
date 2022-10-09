@@ -19,7 +19,7 @@ export default function Projects() {
   return (
     <PageSection>
       <ProjectsSection className="projects-section">
-        <div className="section-header" id="projects">
+        <header className="section-header" id="projects">
           <h1 className="section-title">Featured Projects</h1>
           <div className="section-intro">
             <p>
@@ -32,7 +32,7 @@ export default function Projects() {
               strengthen my skills.
             </p>
           </div>
-        </div>
+        </header>
 
         <ProjectsList className="projects-list">
           <ProjectCard className="project-card">

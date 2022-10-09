@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-// ---- ABOUT
 export const AboutSection = styled.section`
-  .skills-and-tools {
+  .skills-and-tools-section {
     /* border: 2px solid red; */
     text-align: center;
     padding-top: 1.6rem;
