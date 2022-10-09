@@ -57,6 +57,27 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.bg-texture {
+  width: 100%;
+  height: 100%;
+  /* background-image: url("/texture-gray.jpeg"); */
+  position: fixed;
+  left: 0;
+  z-index: -1;
+  filter: brightness(120%) grayscale(100%);
+  opacity: 0.25;
+}
+
+.light {
+  background-color: var(--color-gray-2);
+  color: var(--text-color-black);
+}
+
+.dark {
+  background-color: var(--color-black);
+  color: var(--text-color-white);
+}
+
 button {
   cursor: pointer;
   border: none;
@@ -114,15 +135,52 @@ svg {
   max-width: 100%;
 }
 
+/* forms */
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
 .btn {
-  /* font-family: "Inter", Helvetica, sans-serif; */
   font-family: "Roboto Mono", monospace;
   font-size: 1.4rem;
   font-weight: bold;
-  /* letter-spacing: 0.5px; */
+
+  border: 2px solid var(--text-color-black);
+  background-color: transparent;
+  color: var(--text-color-black);
 
   padding: 1.2rem 2.4rem;
   border-radius: 4px;
+}
+
+.btn-light {
+  border: 2px solid var(--color-black);
+  color: var(--text-color-black);
+}
+.btn-light:hover {
+  background-color: var(--color-black);
+  color: var(--color-gray-2);
+  opacity: 1;
+
+  transition: ease-in-out 0.2s;
+}
+
+.btn-dark {
+  border: 2px solid var(--color-gray-2);
+  color: var(--text-color-white);
+}
+.btn-dark:hover {
+  background-color: var(--color-gray-2);
+  color: var(--text-color-black);
+  opacity: 1;
+
+  transition: ease-in-out 0.2s;
 }
 
 .emoji {

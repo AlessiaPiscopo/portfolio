@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
+import BackgroundTexture from "../components/BackgroundTexture";
+
 export const ProjectsSection = styled.section``;
+
+export const BgTextureDark = styled(BackgroundTexture)`
+  /* background-image: url("/texture-dark.jpg"); */
+`;
 
 // cards grid
 export const ProjectsList = styled.ul`

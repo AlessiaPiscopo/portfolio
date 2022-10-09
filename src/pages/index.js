@@ -20,7 +20,6 @@ export default function Home() {
   return (
     <>
       <BackgroundTexture />
-
       <Layout>
         <StyledHomePage className="home">
           <Hero />

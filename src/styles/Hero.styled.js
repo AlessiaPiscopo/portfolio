@@ -96,13 +96,7 @@ export const ButtonsSection = styled.section`
     color: var(--text-color-white);
   }
 
-  .contact-me-btn {
-    border: 2px solid var(--text-color-black);
-    background-color: transparent;
-    color: var(--text-color-black);
-  }
-
-  .contact-me-link {
+  /* .contact-me-link {
     color: var(--color-gray-6);
     font-weight: bold;
     display: flex;
@@ -118,7 +112,7 @@ export const ButtonsSection = styled.section`
       .arrow {
         transform: translate(0.8rem);
       }
-    }
+    } */
   }
 
   @media screen and (max-width: 368px) {

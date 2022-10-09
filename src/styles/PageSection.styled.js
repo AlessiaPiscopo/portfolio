@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const StyledPageSection = styled.section`
+  /* border: 2px solid blue; */
+
   .section-header {
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0 2.4rem;
 
     /* TODO: FIGURE THIS OUT !!!! */
     /* navbar height: 6rem */

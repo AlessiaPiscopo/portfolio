@@ -6,7 +6,7 @@ import { StyledLayout } from "../styles/Layout.styled";
 
 // components
 import Navbar from "./Navbar";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 // The children property represents anything that will be nested inside the Layout component (in this case, the website content)
 export default function Layout({ children }) {
@@ -14,7 +14,7 @@ export default function Layout({ children }) {
     <StyledLayout className="layout">
       <Navbar />
       <main className="content">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </StyledLayout>
   );
 }
