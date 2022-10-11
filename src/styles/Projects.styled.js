@@ -27,6 +27,8 @@ export const ProjectCard = styled.li`
   border-radius: 20px;
   font-size: 1.4rem;
 
+  margin-bottom: 2.4rem;
+
   .project-info {
     display: flex;
     flex-direction: column;
@@ -37,12 +39,13 @@ export const ProjectCard = styled.li`
       color: var(--text-color-gray);
       font-size: 1.8rem;
       text-align: center;
-      padding-bottom: 0.4rem;
+      padding: 0.4rem 0;
     }
 
     .project-preview-image {
       width: 240px;
       border-radius: 10px;
+      margin-bottom: 0.8rem;
     }
 
     .stack-list {
@@ -53,8 +56,9 @@ export const ProjectCard = styled.li`
     }
 
     .project-description {
+      color: var(--text-color-black);
       font-size: 1.35rem;
-      padding: 0 0.2rem;
+      padding: 0.4rem 0.2rem;
     }
   }
 
@@ -62,14 +66,14 @@ export const ProjectCard = styled.li`
     color: var(--color-gray-5);
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 0.8rem;
     padding-top: 0.6rem;
 
     .github-icon {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     .external-link-icon {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
   }
 `;

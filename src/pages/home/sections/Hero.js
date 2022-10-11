@@ -20,10 +20,10 @@ export default function Hero() {
   return (
     <StyledHero className="hero">
       <div className="hero-content-container">
-        <ProfilePicture
+        {/* <ProfilePicture
           src="/profile-pic-round-scribbles-bees.png"
           alt="profile picture"
-        ></ProfilePicture>
+        ></ProfilePicture> */}
 
         <HeroContentRight className="hero-content-right">
           <h1 className="name">Alessia Piscopo</h1>
@@ -31,8 +31,8 @@ export default function Hero() {
 
           <div className="description">
             <p>
-              Recent Web Development grad <span className="emoji">🎓</span>,
-              urban beekeeper, and creative thinker with a passion for learning.
+              Recent Web Development grad, urban beekeeper, and creative thinker
+              with a passion for learning.
             </p>
             <p>
               I particularly love Frontend Development & UI/UX Design and am
@@ -57,7 +57,7 @@ export default function Hero() {
           </ButtonsSection>
 
           <SocialsIcons className="socials-icons">
-            <span className="emoji link-emoji">🔗</span>
+            {/* <span className="emoji link-emoji">🔗</span> */}
 
             {/* LinkedIn */}
             <a

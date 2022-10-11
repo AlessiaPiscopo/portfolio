@@ -20,8 +20,12 @@ export default function Projects() {
   return (
     <>
       <PageSection>
-        {/* <BgTextureDark /> */}
-        <ProjectsSection className="projects-section">
+        <ProjectsSection
+          className="projects-section dark"
+          style={{
+            backgroundImage: "url(/texture-dark.jpg)",
+          }}
+        >
           <header className="section-header" id="projects">
             <h1 className="section-title">Featured Projects</h1>
             <div className="section-intro">

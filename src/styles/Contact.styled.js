@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactSection = styled.section`
   .section-intro {
-    max-width: 375px;
+    max-width: 400px;
   }
 
   .form-container {
@@ -46,7 +46,7 @@ export const ContactSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 15vh;
 
     padding: 2.4rem 2rem;
 

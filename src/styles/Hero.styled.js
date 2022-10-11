@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
 export const StyledHero = styled.article`
+  border: 2px solid green;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4.8rem;
-  padding: 8rem 2.4rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* gap: 4.8rem; */
+  /* padding: 8rem 2.4rem; */
 
   /* profile pic & content right */
   .hero-content-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: flex-start;
+    justify-content: center; */
     gap: 4.8rem;
 
     @media screen and (max-width: 600px) {
@@ -31,9 +32,9 @@ export const ProfilePicture = styled.img`
 `;
 
 export const HeroContentRight = styled.article`
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   max-width: 600px;
 
   .name {

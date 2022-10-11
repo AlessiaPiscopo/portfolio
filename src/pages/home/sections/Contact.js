@@ -7,12 +7,7 @@ import { ContactSection } from "../../../styles/Contact.styled";
 export default function Contact() {
   return (
     <PageSection>
-      <ContactSection
-        className="contact-section dark"
-        style={{
-          backgroundImage: "url(/texture-dark.jpg)",
-        }}
-      >
+      <ContactSection className="contact-section dark">
         <header className="section-header" id="contact">
           <h1 className="section-title">Contact</h1>
           <div className="section-intro">

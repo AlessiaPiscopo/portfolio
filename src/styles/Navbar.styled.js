@@ -1,31 +1,37 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
+  border: 2px solid red;
+  font-size: 1.4rem;
   color: var(--color-gray-2);
-  background-color: var(--color-black);
-  height: 6rem;
-  padding: 0 4.8rem;
+  background-color: transparent;
+  /* background-color: var(--color-black); */
+  /* height: 5rem; */
+  height: 100vh;
+  /* padding-top: ; */
+  width: 25%;
+  padding: 0 6.4rem;
   position: sticky;
   top: 0;
+  left: 0;
+  padding: auto 0;
   z-index: 10;
-
-  /* position nav in center of container */
-  display: flex;
-  align-items: center;
 `;
 
 export const Nav = styled.nav`
   display: flex;
+  flex-direction: column;
   width: 100%;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
+  gap: 1.2rem;
 
   .initials {
     color: var(--color-gray-1);
-    font-family: "Inter", Helvetica, sans-serif;
-    font-size: 2.2rem;
+    /* font-family: "Inter", Helvetica, sans-serif; */
+    font-size: 1.4rem;
     font-weight: bold;
-    padding-right: 1.6rem;
+    /* padding-right: 1.6rem; */
 
     @media screen and (max-width: 368px) {
       font-size: 1.6rem;
@@ -35,10 +41,12 @@ export const Nav = styled.nav`
 
 export const MenuContainer = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: space-between;
+  gap: 0.6rem;
 
-  width: 25%;
+  /* width: 25%;
   min-width: 225px;
-  max-width: 50vw;
+  max-width: 50vw; */
 `;

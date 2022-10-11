@@ -69,12 +69,12 @@ export default function About() {
                 Here are some of my tech skills and tools I have experience
                 with.
               </p>
-              <p>
+              {/* <p>
                 I'm constantly building my knowledge of HTML, CSS, and
                 JavaScript. Since these ultimately form the foundation on which
                 web development is built upon, I believe they are especially
                 important to master.
-              </p>
+              </p> */}
             </div>
           </header>
 
