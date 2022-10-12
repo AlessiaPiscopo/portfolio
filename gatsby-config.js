@@ -7,6 +7,8 @@
 module.exports = {
   /* Your site config here */
 
+  plugins: [`gatsby-plugin-styled-components`],
+
   siteMetadata: {
     title: "Alessia Piscopo | Full-Stack Web Developer",
     description: "Alessia Piscopo's Portfolio Website",

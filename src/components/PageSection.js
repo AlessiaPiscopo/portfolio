@@ -1,6 +1,6 @@
 import React from "react";
 
-import { StyledPageSection } from "../styles/PageSection.styled";
+import { StyledPageSection } from "./PageSection.styled";
 
 export default function PageSection({ children }) {
   return (

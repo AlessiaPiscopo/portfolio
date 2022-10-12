@@ -1,0 +1,181 @@
+/* ---- spacing system (rem) - 0.2 / 0.4 / 0.8 / 1.2 / 1.6 / 2.4 / 3.2 / 4.8 / 6.4 / 8 / 9.6 / 12.8 */
+
+/* ---- font size system (rem) - 1 / 1.2 / 1.4 / 1.6 / 1.8 / 2 / 2.4 / 3 / 3.6 / 4.4 / 5.2 / 6.2 / 7.4 / 8.6 / 9.8 */
+
+/* fonts - Inconsolata (monospace), Playfair Display (serif), Inter (sans-serif) */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,800;0,900;1,800;1,900&display=swap");
+
+:root {
+  /* ---- colors */
+
+  /* blacks, whites, grays */
+  --color-white: #f8f9fa;
+  --color-black: #181a1c;
+
+  --color-gray-0: #f8f9fa;
+  --color-gray-1: #f1f3f5;
+  --color-gray-2: #e9ecef;
+  --color-gray-3: #dee2e6;
+  --color-gray-4: #ced4da;
+  --color-gray-5: #adb5bd;
+  --color-gray-6: #868e96;
+  --color-gray-7: #495057;
+  --color-gray-8: #343a40;
+
+  --bg-color-dark: var(--color-black);
+  --bg-color-light: var(--color-white);
+
+  --text-color-light: var(--color-gray-2);
+  --text-color-dark: var(--color-black);
+  --text-color-gray: var(--color-gray-7);
+
+  --color-opal: #93ada9;
+  --color-opal-1: #bcccc9;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+
+  /* set 1rem = 10px instead of default 16px (10px/16px = 62.5%) */
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--text-color-light);
+  font-family: "Inconsolata", monospace;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+
+  /* ---- dark background texture */
+  background: url("/texture-dark.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  /* default dark mode fallback color */
+  background-color: var(--bg-color-dark);
+}
+
+.content {
+  margin-left: 150px;
+}
+
+/* remove default margin/padding & avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+/* improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* make icon links accessible */
+.visually-hidden {
+  display: none;
+}
+
+/* ---- dark/light modes (default - dark) */
+
+/* dark mode - dark bg, light text */
+.dark {
+  background-color: var(--color-black);
+  color: var(--text-color-light);
+}
+
+/* light mode - light bg, dark text */
+.light {
+  background-color: var(--color-gray-2);
+  color: var(--text-color-dark);
+}
+
+/* ---- links */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* ---- forms */
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+fieldset {
+  border: none;
+}
+
+/* ---- buttons */
+
+button,
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: bold;
+
+  padding: 1.2rem 2.4rem;
+  border-radius: 4px;
+}
+
+.btn-dark {
+  border: 2px solid var(--color-gray-2);
+  color: var(--text-color-light);
+}
+.btn-dark:hover {
+  background-color: var(--color-gray-2);
+  color: var(--text-color-dark);
+  transition: ease-in-out 0.2s;
+}
+
+.btn-light {
+  border: 2px solid var(--color-black);
+  color: var(--text-color-dark);
+}
+.btn-light:hover {
+  background-color: var(--color-black);
+  color: var(--color-gray-2);
+  transition: ease-in-out 0.2s;
+}
+
+/* ---- misc */
+
+li {
+  list-style-type: none;
+}
