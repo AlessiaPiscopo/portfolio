@@ -13,8 +13,8 @@ export const StyledPageSection = styled.section`
     padding: 0 2.4rem;
 
     /* TODO: FIGURE THIS OUT !!!! */
-    /* navbar height: 6rem */
-    /* make anchor account for navbar height (by offsetting padding-top with negative margin-top) */
+    /* sidebar height: 6rem */
+    /* make anchor account for sidebar height (by offsetting padding-top with negative margin-top) */
     /* padding: 8rem 2.4rem 2.4rem 2.4rem;
     margin-top: -8rem; */
     /* padding-top: 6rem;

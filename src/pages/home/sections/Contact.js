@@ -1,81 +1,71 @@
 import React from "react";
 
-import PageSection from "../../../components/PageSection";
-
-import { ContactSection } from "../../../styles/Contact.styled";
+import { ContactSection } from "./Contact.styled";
 
 export default function Contact() {
   return (
-    <PageSection>
-      <ContactSection className="contact-section dark">
-        <header className="section-header" id="contact">
-          <h1 className="section-title">Contact</h1>
-          <div className="section-intro">
-            <p>Get in touch with me!</p>
-            <p>
-              You can fill out the form below or send me an email by clicking{" "}
-              <a
-                href="mailto:alessia.piscopo@hotmail.com"
-                className="mail-to-link"
-              >
-                <strong>here</strong>
-              </a>
-              .
-            </p>
-          </div>
-        </header>
-
-        {/* form */}
-        <div className="form-container">
-          <form
-            action="https://formsubmit.co/alessia.piscopo@hotmail.com"
-            method="POST"
-          >
-            <input type="text" name="name" placeholder="Name" required></input>
-            <input
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              required
-            ></input>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-            <button type="submit" className="btn btn-dark">
-              Send
-            </button>
-          </form>
-        </div>
-
-        {/* footer 
-
-        Note: keep here temporarily to incorporate into same bg texture
-        
-        TODO: move back to Layout as its own component with a different fun bg
-        */}
-        <footer>
+    <ContactSection className="contact-section">
+      <header className="section-header" id="contact">
+        <h1 className="section-title">Contact</h1>
+        <div className="section-intro">
+          <p>Get in touch with me!</p>
           <p>
-            Designed & Developed by{" "}
+            You can fill out the form below or send me an email at{" "}
             <a
-              href="https://github.com/AlessiaPiscopo/portfolio"
-              target="_blank"
+              href="mailto:alessia.piscopo@hotmail.com"
+              className="mail-to-link"
             >
-              <strong>Alessia Piscopo</strong>
+              <strong>alessia.piscopo@hotmail.com</strong>
             </a>
+            .
           </p>
+        </div>
+      </header>
 
-          <p>
-            Built using{" "}
-            <a href="https://www.gatsbyjs.com/">
-              <strong>Gatsby.js</strong>
-            </a>
-          </p>
-        </footer>
-      </ContactSection>
-    </PageSection>
+      {/* form */}
+
+      <form
+        action="https://formsubmit.co/alessia.piscopo@hotmail.com"
+        method="POST"
+      >
+        <fieldset className="first-and-last-name">
+          <input
+            type="text"
+            name="first-name"
+            className="first-name"
+            placeholder="First Name *"
+            required
+          />
+
+          <input
+            type="text"
+            name="last-name"
+            className="last-name"
+            placeholder="Last Name *"
+            required
+          />
+        </fieldset>
+
+        <input type="email" name="email" placeholder="E-mail *" required />
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="New message - alessiapiscopo.dev"
+        />
+
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Message *"
+        />
+
+        <button type="submit" className="btn btn-dark">
+          Send
+        </button>
+      </form>
+    </ContactSection>
   );
 }
