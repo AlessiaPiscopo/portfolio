@@ -20,7 +20,11 @@ export default function Hero() {
       </div>
 
       <div className="buttons-section">
-        <a href="#projects" className="btn btn-dark">
+        <a
+          href="https://github.com/AlessiaPiscopo"
+          target="_blank"
+          className="btn btn-dark"
+        >
           See my work
         </a>
 

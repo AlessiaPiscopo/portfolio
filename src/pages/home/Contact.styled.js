@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const ContactSection = styled.section`
+  border: 2px solid yellow;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   form {
     max-width: 400px;
     display: flex;

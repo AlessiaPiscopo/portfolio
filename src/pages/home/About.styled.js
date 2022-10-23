@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const AboutSection = styled.section`
+  border: 2px solid hotpink;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   .skills-and-tools {
     h2 {
       font-size: 2rem;

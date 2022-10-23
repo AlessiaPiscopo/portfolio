@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSidebar = styled.div`
+  border: 2px solid green;
   height: 100%;
   width: 150px;
   position: fixed;
@@ -8,11 +9,33 @@ export const StyledSidebar = styled.div`
   left: 0;
   z-index: 10;
 
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+
   nav {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1.2rem;
+    text-transform: lowercase;
+
+    .initials {
+      font-weight: bold;
+      color: var(--text-color-light);
+      margin-bottom: 1.2rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    li {
+      color: var(--color-gray-6);
+
+      a:hover {
+        margin-left: 0.6rem;
+        opacity: 1;
+        transition: ease-in-out 0.2s;
+      }
+    }
   }
 `;

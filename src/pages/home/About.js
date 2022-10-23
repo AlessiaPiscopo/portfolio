@@ -27,8 +27,8 @@ import { MdOutlineMobileFriendly } from "react-icons/md";
 
 export default function About() {
   return (
-    <AboutSection className="about-section">
-      <header id="about" className="section-header">
+    <AboutSection id="about" className="about-section">
+      <header className="section-header">
         <h1 className="section-title">About Me</h1>
         <div className="section-intro">
           <p>

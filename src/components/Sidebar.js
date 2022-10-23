@@ -7,12 +7,23 @@ export default function Sidebar() {
   return (
     <StyledSidebar className="sidebar">
       <nav>
-        <Link to="/" className="initials">
-          AP
-        </Link>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <ul>
+          <li className="initials">
+            <Link to="/">ap.</Link>
+          </li>
+
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="#about">About</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
     </StyledSidebar>
   );
