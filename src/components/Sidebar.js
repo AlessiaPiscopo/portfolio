@@ -9,19 +9,31 @@ export default function Sidebar() {
       <nav>
         <ul>
           <li className="initials">
-            <Link to="/">ap.</Link>
+            <Link to="/" className="initials-link">
+              ap.
+            </Link>
           </li>
 
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#about" className="about-link">
+              About
+            </a>
           </li>
 
           <li>
-            <a href="#about">About</a>
+            <a
+              href="https://github.com/AlessiaPiscopo"
+              target="_blank"
+              className="projects-link"
+            >
+              Projects
+            </a>
           </li>
 
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" className="contact-link">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>

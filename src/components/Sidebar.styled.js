@@ -14,27 +14,30 @@ export const StyledSidebar = styled.div`
   padding: 0 2rem;
 
   nav {
-    text-transform: lowercase;
-
-    .initials {
-      font-weight: bold;
-      color: var(--text-color-light);
-      margin-bottom: 1.2rem;
-    }
-
     ul {
+      text-transform: lowercase;
       display: flex;
       flex-direction: column;
-      gap: 0.2rem;
+      gap: 0.6rem;
+      color: var(--color-gray-6);
     }
 
-    li {
-      color: var(--color-gray-6);
+    a:hover {
+      /* margin-left: 0.6rem; */
+      transition: ease-in-out 0.2s;
+      opacity: 1;
+      text-decoration: line-through;
+    }
 
-      a:hover {
-        margin-left: 0.6rem;
-        opacity: 1;
-        transition: ease-in-out 0.2s;
+    .initials {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--text-color-light);
+      margin-bottom: 0.8rem;
+
+      .initials-link:hover {
+        margin-left: 0;
+        font-style: italic;
       }
     }
   }
