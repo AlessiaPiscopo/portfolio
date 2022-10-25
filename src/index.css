@@ -67,13 +67,6 @@ body {
   background-color: var(--bg-color-dark);
 }
 
-.content {
-  /* border: 2px solid hotpink; */
-  /* margin-left: 150px; */
-  /* padding: 0 2rem; */
-  padding-left: 150px;
-}
-
 /* remove default margin/padding & avoid text overflows */
 p,
 h1,
@@ -95,6 +88,12 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+}
+
+/* ---- nav */
+nav > ul {
+  text-transform: lowercase;
+  color: var(--color-gray-2);
 }
 
 /* make icon links accessible */
@@ -126,7 +125,14 @@ a {
 a:hover {
   opacity: 0.7;
   cursor: pointer;
+  text-decoration: line-through;
+  transition: ease-in-out 0.2s;
+  opacity: 1;
 }
+/* ? a:active,
+a:visited {
+  text-decoration: none;
+} */
 
 /* ---- forms */
 

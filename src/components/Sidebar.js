@@ -8,12 +8,6 @@ export default function Sidebar() {
     <StyledSidebar className="sidebar">
       <nav>
         <ul>
-          <li className="initials">
-            <Link to="/" className="initials-link">
-              ap.
-            </Link>
-          </li>
-
           <li>
             <a href="#about" className="about-link">
               About

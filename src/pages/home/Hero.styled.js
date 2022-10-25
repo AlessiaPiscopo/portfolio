@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const StyledHero = styled.section`
+  /* border: 2px solid blue; */
   height: 100vh;
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
   justify-content: center;
 
   .name {
