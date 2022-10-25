@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const StyledSidebar = styled.div`
   border: 2px solid green;
   height: 100%;
-  width: 150px;
+  /* min-width: 100px; */
+  min-width: 10vw;
   position: fixed;
   top: 0;
   left: 0;

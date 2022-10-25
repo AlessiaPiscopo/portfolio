@@ -51,8 +51,11 @@ html {
 
 body {
   color: var(--text-color-light);
+
   font-family: "Inconsolata", monospace;
   font-size: 1.6rem;
+
+  letter-spacing: 0.5px;
   line-height: 1.25;
   -webkit-font-smoothing: antialiased;
 
@@ -66,8 +69,9 @@ body {
 
 .content {
   /* border: 2px solid hotpink; */
-  margin-left: 150px;
-  padding: 0 2rem;
+  /* margin-left: 150px; */
+  /* padding: 0 2rem; */
+  padding-left: 150px;
 }
 
 /* remove default margin/padding & avoid text overflows */

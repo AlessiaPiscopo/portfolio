@@ -32,20 +32,33 @@ export default function About() {
         <h1 className="section-title">About Me</h1>
         <div className="section-intro">
           <p>
-            I first became interested in Web Development back in the
-            mid-2000s—while tinkering with the HTML & CSS of my MySpace
-            profile—but only recently decided to pursue it as a career path. I
-            also have a Bachelor of Arts in Honours History, Minor Law &
-            Society, as well as years of customer service experience as a
-            Pharmacy Technician and Barista.
+            My love for web development and design started when I was first
+            introduced to it in the mid-2000s. The gateway, really, was being
+            able to tinker with the HTML and CSS of my MySpace profile. I have
+            loved it so much ever since and have now decided to pursue it as a
+            career path. This year, I got my diploma in Web Development from
+            Concordia University and have been continuing to build projects and
+            learn ever since.
           </p>
 
           <p>
-            I'm also an urban beekeeper currently caring for six thriving hives
-            in a local community garden. I travel to Italy whenever I can to
-            work for La Casina, my family's farm and olive oil business. After
-            tending to the animals and picking olives in the groves, I focus on
-            web development, graphic design, and video editing for the company.
+            I previously obtained a Bachelor of Arts in Honours History with a
+            Minor in aw & Society. I also have years of customer service
+            experience as a pharmacy technician and barista.
+          </p>
+
+          <p>
+            When I'm not coding, I take care of six thriving honey bee hives in
+            a local community garden. I also travel to Italy whenever I can to
+            work for Azienda Agricola La Casina, my family's small farm and
+            olive oil business. After tending to the animals and picking olives
+            in the groves, I focus on web development, branding, graphic design,
+            and video editing for the company.
+          </p>
+
+          <p>
+            With my ambition and willingness to learn, I believe I have what it
+            takes to succeed in the tech industry.
           </p>
         </div>
       </header>
