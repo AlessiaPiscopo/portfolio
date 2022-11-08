@@ -2,6 +2,8 @@ import React from "react";
 
 import { ContactSection } from "./Contact.styled";
 
+import { FiLinkedin, FiGithub, FiInstagram, FiFacebook } from "react-icons/fi";
+
 export default function Contact() {
   return (
     <ContactSection className="contact-section">
@@ -66,6 +68,29 @@ export default function Contact() {
           Send
         </button>
       </form>
+
+      <div className="socials-icons">
+        <span>Let's connect:</span>
+        <a href="https://www.linkedin.com/in/alessiapiscopo/">
+          <FiLinkedin className="socials-icon" aria-hidden="true" />
+          <span class="visually-hidden">LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/AlessiaPiscopo">
+          <FiGithub className="socials-icon" aria-hidden="true" />
+          <span class="visually-hidden">Github</span>
+        </a>
+
+        <a href="https://www.instagram.com/alepiscopo/">
+          <FiInstagram className="socials-icon" aria-hidden="true" />
+          <span class="visually-hidden">Instagram</span>
+        </a>
+
+        <a href="https://www.facebook.com/alessia.piscopo.54">
+          <FiFacebook className="socials-icon" aria-hidden="true" />
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </div>
     </ContactSection>
   );
 }

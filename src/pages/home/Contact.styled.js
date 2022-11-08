@@ -26,11 +26,12 @@ export const ContactSection = styled.section`
 
     input,
     textarea {
-      font-size: 1.4rem;
+      /* font-size: 1.4rem; */
+      color: white;
       border: none;
       border-radius: 4px;
-      background-color: var(--color-white);
-      opacity: 0.8;
+      background-color: var(--color-gray-8);
+      opacity: 0.9;
 
       padding: 0.4rem 0.8rem;
       margin-bottom: 0.8rem;
@@ -38,6 +39,21 @@ export const ContactSection = styled.section`
 
     textarea {
       margin-bottom: 1.2rem;
+    }
+  }
+
+  .socials-icons {
+    display: flex;
+    gap: 1.2rem;
+    margin-left: 0.6rem;
+
+    .socials-icon {
+      color: var(--color-gray-6);
+      font-size: 1.6rem;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 `;

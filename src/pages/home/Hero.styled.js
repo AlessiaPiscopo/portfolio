@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const StyledHero = styled.section`
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
+  width: 375px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin: 0 auto;
+  padding-top: 120px;
 
   .name {
     font-size: 2.4rem;

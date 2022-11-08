@@ -15,7 +15,10 @@ export default function Hero() {
         </p>
         <p>
           I particularly love Frontend Development & UI/UX Design and am
-          currently seeking a new work or internship opportunity.
+          currently seeking a new work or internship opportunity.{" "}
+          <a href="#about" class="learn-more-link">
+            Learn more
+          </a>
         </p>
       </div>
 

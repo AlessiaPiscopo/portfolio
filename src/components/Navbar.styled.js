@@ -1,23 +1,18 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
-  /* hide Navbar until 600px (show menu icon) */
-  @media screen and (max-width: 600px) {
-    display: none;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
   nav {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-
     padding: 1.6rem 3.2rem;
+    text-shadow: 1px 1px 15px black;
 
     ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 0.6rem;
 
       .initials {
         font-size: 2rem;
@@ -25,7 +20,6 @@ export const StyledNavbar = styled.div`
         color: var(--text-color-light);
 
         .initials-link:hover {
-          margin-left: 0;
           font-style: italic;
         }
       }
