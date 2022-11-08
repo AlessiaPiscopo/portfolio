@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProjectsSection = styled.section`
+export const StyledProjects = styled.section`
   .projects-list {
     font-size: 1.45rem;
     display: flex;

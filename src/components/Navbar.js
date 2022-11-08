@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import { StyledNavbar } from "./Navbar.styled";
+import { StyledNavbar } from "../styles/Navbar.styled";
 
 export default function Navbar() {
   return (
@@ -9,31 +9,31 @@ export default function Navbar() {
         <ul>
           <li className="initials">
             <Link to="/" className="initials-link">
-              ap.
+              AP.
             </Link>
           </li>
 
           <div className="links-right">
             <li>
-              <a href="#about" className="about-link">
+              <Link to="/about" className="btn label-btn">
                 About
-              </a>
+              </Link>
             </li>
 
             <li>
               <a
                 href="https://github.com/AlessiaPiscopo"
                 target="_blank"
-                className="projects-link"
+                className="btn label-btn"
               >
-                Projects
+                GitHub
               </a>
             </li>
 
             <li>
-              <a href="#contact" className="contact-link">
+              <Link to="/contact" className="btn label-btn">
                 Contact
-              </a>
+              </Link>
             </li>
           </div>
         </ul>

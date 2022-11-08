@@ -1,18 +1,29 @@
 import styled from "styled-components";
 
-export const ContactSection = styled.section`
-  border: 2px solid yellow;
-  height: 100vh;
+export const StyledContact = styled.section`
+  /* border: 2px solid yellow; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+
+  .section-intro {
+    /* max-width: 400px; */
+
+    p:first-child {
+      padding-bottom: 0.8rem;
+    }
+
+    .mail-to-link {
+      text-decoration: underline;
+    }
+  }
 
   form {
-    max-width: 400px;
     display: flex;
     flex-direction: column;
-    opacity: 0.9;
-    margin-top: 1.2rem;
+    margin: 4.8rem 0 4.8rem 0;
 
     .first-and-last-name {
       display: flex;
@@ -26,7 +37,6 @@ export const ContactSection = styled.section`
 
     input,
     textarea {
-      /* font-size: 1.4rem; */
       color: white;
       border: none;
       border-radius: 4px;
@@ -38,22 +48,27 @@ export const ContactSection = styled.section`
     }
 
     textarea {
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.6rem;
     }
   }
 
   .socials-icons {
     display: flex;
-    gap: 1.2rem;
-    margin-left: 0.6rem;
+    align-items: flex-end;
+    gap: 1.4rem;
+    cursor: pointer;
 
     .socials-icon {
       color: var(--color-gray-6);
-      font-size: 1.6rem;
+      font-size: 1.8rem;
 
       &:hover {
-        opacity: 0.5;
+        opacity: 0.6;
       }
+    }
+
+    .spotify {
+      font-size: 2rem;
     }
   }
 `;

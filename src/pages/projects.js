@@ -1,12 +1,12 @@
 import React from "react";
 
-import { ProjectsSection } from "./Projects.styled";
+import { StyledProjects } from "../styles/projects.styled";
 
 import { FiGitPullRequest, FiGlobe } from "react-icons/fi";
 
 export default function Projects() {
   return (
-    <ProjectsSection className="projects-section">
+    <StyledProjects className="projects-section">
       <header className="section-header" id="projects">
         <h1 className="section-title">Featured Projects</h1>
         <div className="section-intro">
@@ -87,6 +87,6 @@ export default function Projects() {
                     </div>
                   </ProjectCard> */}
       </ul>
-    </ProjectsSection>
+    </StyledProjects>
   );
 }

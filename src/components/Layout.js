@@ -1,16 +1,16 @@
 import React from "react";
 import "../index.css";
 
-import { Container } from "./Layout.styled";
+import { StyledLayout } from "../styles/Layout.styled";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <Container>
+    <StyledLayout>
       <Navbar />
       <main className="content">{children}</main>
       <Footer />
-    </Container>
+    </StyledLayout>
   );
 }
