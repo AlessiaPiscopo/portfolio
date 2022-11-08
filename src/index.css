@@ -59,12 +59,19 @@ body {
   line-height: 1.25;
   -webkit-font-smoothing: antialiased;
 
-  /* ---- dark background texture */
+  /* dark background texture */
   background: url("/texture-dark.jpg") no-repeat center center fixed;
   background-size: cover;
 
   /* default dark mode fallback color */
   background-color: var(--bg-color-dark);
+}
+
+/* ---- typography */
+
+@font-face {
+  font-family: "Impact Label";
+  src: url("../static/ImpactLabel.ttf");
 }
 
 /* remove default margin/padding & avoid text overflows */
@@ -78,6 +85,11 @@ h6 {
   overflow-wrap: break-word;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: "Impact Label";
+  font-size: 3rem;
 }
 
 /* improve media defaults */
