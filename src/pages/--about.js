@@ -24,7 +24,6 @@ import {
   SiGit,
 } from "react-icons/si";
 import { AiOutlineApi } from "react-icons/ai";
-import { MdOutlineMobileFriendly } from "react-icons/md";
 
 export default function About() {
   return (
