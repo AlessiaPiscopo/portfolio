@@ -1,41 +1,43 @@
 import { Link } from "gatsby";
 import React from "react";
-import { StyledNavbar } from "../styles/Navbar.styled";
+import { StyledNavbar } from "../styles/--Navbar.styled";
 
 export default function Navbar() {
   return (
     <StyledNavbar className="navbar">
-      <nav>
-        <ul>
-          <li className="initials">
-            <Link to="/" className="initials-link">
-              AP.
+      <div className="logo">
+        <div className="logo__initials">AP.</div>
+      </div>
+
+      <button className="nav-toggle" aria-label="toggle navigation">
+        <span className="hamburger"></span>
+      </button>
+
+      <nav className="nav">
+        <ul className="nav__nav-list">
+          <li className="nav__item">
+            <Link to="/" className="nav__link">
+              Home
             </Link>
           </li>
 
-          <div className="links-right">
-            <li>
-              <Link to="/about" className="btn label-btn">
-                About
-              </Link>
-            </li>
+          <li className="nav__item">
+            <Link to="/about" className="nav__link">
+              About
+            </Link>
+          </li>
 
-            <li>
-              <a
-                href="https://github.com/AlessiaPiscopo"
-                target="_blank"
-                className="btn label-btn"
-              >
-                GitHub
-              </a>
-            </li>
+          <li className="nav__item">
+            <Link to="/projects" className="nav__link">
+              Projects
+            </Link>
+          </li>
 
-            <li>
-              <Link to="/contact" className="btn label-btn">
-                Contact
-              </Link>
-            </li>
-          </div>
+          <li className="nav__item">
+            <Link to="/contact" className="nav__link">
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </StyledNavbar>
