@@ -1,13 +1,13 @@
 import React from "react";
-import { StyledAbout } from "../styles/about.styled";
+import { StyledAbout } from "../styles/About.styled";
 
 export default function About() {
   return (
     <StyledAbout>
-      <h2 class="section__title section__title--about">About</h2>
-      <p class="section__subtitle section__subtitle--about"></p>
+      <h2 className="section__title section__title--about">About</h2>
+      <p className="section__subtitle section__subtitle--about"></p>
 
-      <div class="about-me__body">
+      <div className="about-me__body">
         <p></p>
         <p></p>
       </div>

@@ -8,10 +8,12 @@ import About from "../components/About";
 export default function Home() {
   return (
     <Layout>
-      <div className="home" id="home">
-        <Hero />
-        <Skills />
-        <About />
+      <div className="page-container">
+        <div className="home" id="home">
+          <Hero />
+          <Skills />
+          <About />
+        </div>
       </div>
     </Layout>
   );
