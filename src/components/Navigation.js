@@ -37,7 +37,7 @@ export default function Navigation({ isDesktop }) {
             <ul className="nav-items">
               <li className="logo">
                 <Link to="/">
-                  <h1 className="logo-initials">AP</h1>
+                  <h1 className="logo-initials rotate-counter-clockwise">AP</h1>
                 </Link>
               </li>
 
@@ -91,31 +91,31 @@ export default function Navigation({ isDesktop }) {
 
               <nav className="nav-mobile">
                 <ul className="nav-items">
-                  <li className="logo">
+                  {/* <li className="logo">
                     <Link to="/">
                       <div className="logo-initials">AP</div>
                     </Link>
-                  </li>
+                  </li> */}
 
-                  <li>
+                  <li className="rotate-clockwise">
                     <Link to="/" className="nav-link">
                       Home
                     </Link>
                   </li>
 
-                  <li>
+                  <li className="rotate-counter-clockwise">
                     <Link to="/about" className="nav-link">
                       About
                     </Link>
                   </li>
 
-                  <li>
+                  <li className="rotate-clockwise">
                     <Link to="/projects" className="nav-link">
                       Projects
                     </Link>
                   </li>
 
-                  <li>
+                  <li className="rotate-counter-clockwise">
                     <Link to="/contact" className="nav-link">
                       Contact
                     </Link>

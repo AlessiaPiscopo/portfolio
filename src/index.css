@@ -201,3 +201,11 @@ li {
 .hidden {
   display: none;
 }
+
+.rotate-clockwise {
+  transform: rotate(3deg);
+}
+
+.rotate-counter-clockwise {
+  transform: rotate(-3deg);
+}

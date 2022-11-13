@@ -8,7 +8,8 @@ export const StyledNavigation = styled.div`
 
   /* common styles (mobile and desktop) */
   .logo {
-    transform: rotate(3deg);
+    /* transform: rotate(3deg); */
+    width: fit-content;
 
     .logo-initials {
       background-color: var(--clr-dark);
@@ -74,13 +75,21 @@ export const NavMobile = styled.header`
     justify-content: center;
     z-index: 1000;
 
-    transition: ease 0.5s;
+    font-family: var(--ff-secondary);
+    font-size: 2.4rem;
 
     .nav-items {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      /* justify-content: center; */
       align-items: center;
+      gap: 6.4rem;
+      margin-top: 9.6rem;
+
+      li {
+        background-color: var(--clr-dark);
+        padding: 0.4rem 4.8rem;
+      }
     }
   }
 `;
