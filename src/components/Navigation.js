@@ -1,12 +1,3 @@
-// default view (mobile):
-// menu icon at top left, all nav hidden
-// on menu icon click-fullscreen nav slides in, with logo as first item and x icon top left
-// on x icon click, hide nav, show menu icon
-
-// bigger screen view (min-width: 768px)--ie at 768px and larger:
-// hide mobile view nav
-// show logo left, nav links right
-
 import { Link } from "gatsby";
 import React, { useState } from "react";
 import {
@@ -37,30 +28,30 @@ export default function Navigation({ isDesktop }) {
             <ul className="nav-items">
               <li className="logo">
                 <Link to="/">
-                  <h1 className="logo-initials rotate-counter-clockwise">AP</h1>
+                  <h1 className="logo-initials">AP</h1>
                 </Link>
               </li>
 
               <div className="links-right">
-                <li>
+                <li className="rotate-counter-clockwise">
                   <Link to="/" className="nav-link">
                     Home
                   </Link>
                 </li>
 
-                <li>
+                <li className="rotate-clockwise">
                   <Link to="/about" className="nav-link">
                     About
                   </Link>
                 </li>
 
-                <li>
+                <li className="rotate-counter-clockwise">
                   <Link to="/projects" className="nav-link">
                     Projects
                   </Link>
                 </li>
 
-                <li>
+                <li className="rotate-clockwise">
                   <Link to="/contact" className="nav-link">
                     Contact
                   </Link>
@@ -91,11 +82,11 @@ export default function Navigation({ isDesktop }) {
 
               <nav className="nav-mobile">
                 <ul className="nav-items">
-                  {/* <li className="logo">
+                  <li className="logo">
                     <Link to="/">
                       <div className="logo-initials">AP</div>
                     </Link>
-                  </li> */}
+                  </li>
 
                   <li className="rotate-clockwise">
                     <Link to="/" className="nav-link">

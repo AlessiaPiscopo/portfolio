@@ -77,9 +77,9 @@ html {
 }
 
 body {
-  background-color: var(--clr-dark);
   background: url("/texture-dark.jpg") no-repeat center center fixed;
   background-size: cover;
+  background-color: var(--clr-dark);
 
   font-family: var(--ff-primary);
   font-size: var(--fs-body);

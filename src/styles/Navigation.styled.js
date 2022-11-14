@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
 export const StyledNavigation = styled.div`
-  background-color: black;
+  /* common styles (mobile and desktop) */
+
+  background-color: transparent;
   width: 100vw;
   position: fixed;
   top: 0;
+  font-family: var(--ff-secondary);
+  font-size: 2.4rem;
 
-  /* common styles (mobile and desktop) */
   .logo {
-    /* transform: rotate(3deg); */
     width: fit-content;
 
     .logo-initials {
       background-color: var(--clr-dark);
-      font-family: var(--ff-secondary);
       font-size: 3rem;
       font-weight: var(--fw-bold);
       padding: 0.4rem 1.2rem;
@@ -21,6 +22,7 @@ export const StyledNavigation = styled.div`
   }
 
   /* buttons */
+
   .open-menu-btn-container,
   .close-menu-btn-container {
     height: 5vh;
@@ -53,6 +55,16 @@ export const NavDesktop = styled.header`
     padding: 1.6rem 4.8rem;
   }
 
+  li {
+    box-shadow: 1px 1px 50px black;
+  }
+
+  .nav-link {
+    background-color: var(--clr-dark);
+    font-size: 2rem;
+    padding: 0.4rem 1.2rem;
+  }
+
   .links-right {
     max-width: 75%;
     display: flex;
@@ -75,20 +87,20 @@ export const NavMobile = styled.header`
     justify-content: center;
     z-index: 1000;
 
-    font-family: var(--ff-secondary);
-    font-size: 2.4rem;
-
     .nav-items {
       display: flex;
       flex-direction: column;
-      /* justify-content: center; */
       align-items: center;
       gap: 6.4rem;
       margin-top: 9.6rem;
 
-      li {
+      .nav-link {
         background-color: var(--clr-dark);
         padding: 0.4rem 4.8rem;
+      }
+
+      .logo-initials {
+        background-color: transparent;
       }
     }
   }
