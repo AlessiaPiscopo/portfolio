@@ -7,19 +7,21 @@ export const StyledHero = styled.section`
   align-items: center;
   text-align: center;
 
-  .name {
-    font-family: "Impact Label", "Inconsolata", monospace;
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
+  .full-name {
+    margin-bottom: 1.2rem;
     background-color: var(--color-black);
-    padding: var(--label-padding);
+    padding: 0.4rem 1.2rem;
   }
 
   .title {
-    font-family: "Impact Label", "Inconsolata", monospace;
     font-size: clamp(2rem, 2.5vw, 2.4rem);
-    padding: var(--label-padding);
-    background-color: var(--color-black);
+    background-color: var(--clr-dark);
+    padding: 0.4rem 1.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .profile-pic {
+    max-width: 350px;
   }
 
   .description {
@@ -29,17 +31,15 @@ export const StyledHero = styled.section`
     p:first-of-type {
       padding-bottom: 1.2rem;
     }
+
+    margin-bottom: 1.6rem;
+    /* margin-top: -2rem; */
   }
 
   .buttons-section {
     display: flex;
     align-items: center;
-    gap: 1.6rem;
-    padding: 1.2rem 0 2.4rem 0;
-
-    @media screen and (max-width: 368px) {
-      flex-direction: column;
-      width: 300px;
-    }
+    gap: 2.4rem;
+    margin-bottom: 2.4rem;
   }
 `;

@@ -51,7 +51,8 @@
   --clr-dark: var(--clr-black);
   --clr-accent: #93ada9; /* or #bcccc9 */
 
-  /* --label-padding: 0.6rem 1.6rem; */
+  --label-padding: 0.4rem 1.2rem;
+  ;
 }
 
 /* bigger screens */
@@ -98,14 +99,14 @@ body {
 
 /* ---- Typography */
 
-p,
+/* p, */
 h1,
 h2,
 h3 {
   overflow-wrap: break-word;
   margin: 0;
   padding: 0;
-  font-weight: var(--fw-reg);
+  font-weight: var(--fw-bold);
   line-height: 1.1;
 }
 
@@ -121,14 +122,11 @@ h1 {
   width: fit-content;
 }
 h2 {
+  font-family: var(--ff-secondary);
   font-size: var(--fs-h2);
 }
 h3 {
   font-size: var(--fs-h3);
-}
-
-.label {
-  font-size: 1.8rem;
 }
 
 .section-title {
@@ -154,12 +152,12 @@ button {
 .btn {
   font-family: var(--ff-secondary);
   color: var(--clr-white);
-  font-size: 1.6rem;
 }
 
 .label-btn {
   padding: var(--label-padding);
   background-color: var(--clr-black);
+  font-size: 2rem;
 }
 .label-btn:hover {
   transform: rotate(2deg);
@@ -205,7 +203,13 @@ li {
 .rotate-clockwise {
   transform: rotate(3deg);
 }
+.rotate-clockwise:hover {
+  transform: rotate(-3deg);
+}
 
 .rotate-counter-clockwise {
   transform: rotate(-3deg);
+}
+.rotate-counter-clockwise:hover {
+  transform: rotate(3deg);
 }
