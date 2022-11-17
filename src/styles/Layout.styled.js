@@ -9,6 +9,6 @@ export const StyledLayout = styled.div`
 
   /* place page content below navbar */
   .content {
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
 `;

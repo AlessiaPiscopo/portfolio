@@ -11,11 +11,3 @@ export default function Footer() {
     </StyledFooter>
   );
 }
-
-{
-  /* <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link">a</a>
-        </li>
-</ul> */
-}

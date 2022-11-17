@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const StyledNavigation = styled.div`
   /* common styles (mobile and desktop) */
 
+  /* border: 2px solid green; */
+  /* padding-top: 1.2rem; */
   background-color: transparent;
   width: 100vw;
   position: fixed;
@@ -52,11 +54,7 @@ export const NavDesktop = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.6rem 4.8rem;
-  }
-
-  li {
-    box-shadow: 1px 1px 50px black;
+    padding: 3.2rem 4.8rem;
   }
 
   .nav-link {

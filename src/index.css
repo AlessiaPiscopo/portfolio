@@ -34,7 +34,7 @@
   --fs-h1: 2.4rem;
   /* --fs-h2: ; */
   /* --fs-h3: ; */
-  --fs-body: 1.4rem;
+  --fs-body: clamp(1.2rem, 2.5vw, 1.4rem);
 
   --clr-black: #181a1c;
   --clr-white: #f8f9fa;
@@ -78,9 +78,12 @@ html {
 }
 
 body {
-  background: url("/texture-dark.jpg") no-repeat center center fixed;
+  /* background: url("/texture-dark.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-color: var(--clr-dark);
+  background-color: var(--clr-dark); */
+
+  /* black from bottom of profile pic */
+  background-color: #030102;
 
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -92,10 +95,11 @@ body {
 }
 
 /* TODO: see responsive padding vid */
-.page-container {
-  margin-top: 4.8rem;
-  padding: 0 4.8rem;
-}
+
+/* .page-container {
+  border: 2px solid yellow;
+  padding: 0 2.4rem;
+} */
 
 /* ---- Typography */
 
@@ -157,7 +161,7 @@ button {
 .label-btn {
   padding: var(--label-padding);
   background-color: var(--clr-black);
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2.5vw, 2rem);
 }
 .label-btn:hover {
   transform: rotate(2deg);
