@@ -6,7 +6,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
-  const isDesktop = useMediaQuery("(min-width: 992px)");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
     <StyledLayout>

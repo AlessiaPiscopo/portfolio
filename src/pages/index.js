@@ -11,6 +11,7 @@ export default function Home() {
       <div className="page-container">
         <div className="home" id="home">
           <Hero />
+          <Hero />
           <About />
           {/* <Skills /> */}
         </div>

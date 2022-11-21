@@ -71,7 +71,7 @@ export default function Navigation({ isDesktop }) {
                 className={isMenuClicked ? "hidden" : "open-menu-btn"}
                 onClick={handleMenuClick}
               >
-                <AiOutlineMenu size="22" />
+                <AiOutlineMenu size="28" className="menu-icon" />
               </button>
             </div>
 
@@ -87,7 +87,7 @@ export default function Navigation({ isDesktop }) {
                   <ul className="nav-items">
                     <li className="logo">
                       <Link to="/">
-                        <div className="logo-initials">AP</div>
+                        <div className="logo-initials">Alessia P.</div>
                       </Link>
                     </li>
 

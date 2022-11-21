@@ -1,67 +1,139 @@
 import styled from "styled-components";
 
 export const StyledHero = styled.section`
-  /* border: 2px solid blue; */
-
+  border: 2px solid blue;
   background: url("/profile-pic-bw-square.png") no-repeat top fixed;
   background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
 
-  /* .profile-pic {
-    border: 2px solid green;
+  .bg-container {
+    background-color: rgba(300, 300, 300, 0.15);
+    min-height: 100vh;
     width: 100vw;
-    z-index: -1;
-  } */
+    /* place red box in center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-  /* ---- full name, title, and description container */
-
-  .intro {
+  /* RED BOX */
+  .intro-container {
     border: 2px solid red;
-    background-color: rgba(3, 1, 2, 0.2);
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    /* margin-top: clamp(50%, 80%, 90%); */
-    /* padding: 0 3.2rem; */
-    z-index: -1;
+    padding: 0 2.4rem;
 
-    /* child 1 */
-    .intro-header {
-      /* margin-bottom: auto; */
+    @media (min-width: 768px) {
+      height: fit-content;
+      flex-direction: row;
+      /* padding: 8rem 4.8rem; */
+    }
 
-      .full-name {
-        margin-bottom: 0.8rem;
-        background-color: var(--color-black);
-        /* padding: 0.4rem 1.2rem; */
-      }
+    img.profile-pic {
+      display: none;
 
-      .title {
-        font-size: clamp(1.8rem, 2.5vw, 2.4rem);
-        background-color: var(--clr-dark);
-        padding: 0.4rem 1.2rem;
-        /* margin-bottom: 2.4rem; */
+      @media (min-width: 768px) {
+        display: block;
+        max-height: 500px;
       }
     }
 
-    /* child 2 */
-    .intro-description {
-      padding: 1.2rem 0;
-      max-width: 500px;
-
-      p:first-of-type {
-        padding-bottom: 1.2rem;
-      }
-
-      margin-bottom: 2.4rem;
-    }
-
-    .buttons-section {
+    /* PINK BOX */
+    .intro-content {
+      /* border: 2px solid pink; */
+      max-width: 550px;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      gap: 2.4rem;
-      /* margin-bottom: 2.4rem; */
+      padding: 2.4rem;
+
+      /* @media (min-width: 768px) {
+        align-items: flex-start;
+        justify-content: flex-start;
+      } */
+
+      .intro-header {
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 768px) {
+          /* align-items: flex-start; */
+          /* justify-content: flex-start; */
+        }
+
+        .full-name {
+          font-size: 2.4rem;
+          margin-bottom: 1.2rem;
+          background-color: transparent;
+        }
+
+        .title {
+          width: 325px;
+          text-align: center;
+          font-size: 2.4rem;
+          padding: 0.4rem 4.5rem;
+          background-color: var(--clr-dark);
+          transform: rotate(-3deg);
+        }
+      }
+
+      .intro-description {
+        /* border: 2px solid yellow; */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        padding: 3.2rem 0;
+
+        p {
+          line-height: 2;
+        }
+
+        @media (min-width: 768px) {
+          text-align: left;
+          padding: 4.8rem 0;
+          align-items: flex-start;
+        }
+      }
+
+      .buttons-section {
+        /* border: 2px solid white; */
+        width: 325px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3.2rem;
+        text-align: center;
+        padding-bottom: 2.4rem;
+
+        a {
+          font-size: 2.4rem;
+          background-color: var(--clr-dark);
+        }
+
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+
+      /* learn more link */
+      a[href="#about"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        font-weight: var(--fw-bold);
+
+        &:hover {
+          text-decoration: line-through;
+        }
+      }
     }
   }
 `;

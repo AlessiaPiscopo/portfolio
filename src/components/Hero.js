@@ -2,48 +2,59 @@ import React from "react";
 
 import { StyledHero } from "../styles/Hero.styled";
 
+import { FiArrowRight } from "react-icons/fi";
+
 export default function Hero({ isDesktop }) {
   return (
     <StyledHero className="hero">
-      <div className="intro">
-        <div className="intro-header">
-          <h1 className="full-name">
-            <strong>Alessia Piscopo</strong>
-          </h1>
-          <h2 className="title rotate-counter-clockwise">
-            Full-Stack Web Developer
-          </h2>
-        </div>
+      <div className="bg-container">
+        <div className="intro-container">
+          <img
+            src="/profile-pic.png"
+            alt="Black and white profile silhouette"
+            className="profile-pic"
+          />
+          <div className="intro-content">
+            <header className="intro-header">
+              <h1 className="full-name">Alessia P.</h1>
+              <h2 className="title">Web Developer</h2>
+            </header>
 
-        {/* <img
-          src="/profile-pic-bw-square.png"
-          className="profile-pic"
-          alt="My profile picture"
-        ></img> */}
+            <div className="intro-description">
+              <p>
+                Recent Full-Stack Web Development grad and urban beekeeper based
+                in Montreal, QC, Canada.
+              </p>
+              <p>
+                Passionate about anything Frontend Development and UI/UX Design.
+              </p>
+              <p>
+                I'm currently looking for a new opportunity, so feel free to
+                check out my work and contact me if you would like to
+                collaborate.
+              </p>
+            </div>
 
-        <div className="intro-description">
-          <p>
-            Recent Web Development grad, urban beekeeper, and creative thinker
-            from Montreal, QC.
-          </p>
-          <p>
-            Passionate about anything Frontend & UI/UX Design and currently
-            seeking a new opportunity.
-          </p>
-        </div>
+            <section className="buttons-section">
+              <a
+                href="https://github.com/AlessiaPiscopo"
+                target="_blank"
+                className="btn label-btn"
+              >
+                Projects
+              </a>
 
-        <div className="buttons-section">
-          <a
-            href="https://github.com/AlessiaPiscopo"
-            target="_blank"
-            className="btn label-btn"
-          >
-            See my work
-          </a>
+              <a href="#contact" className="btn label-btn rotate-clockwise">
+                Contact
+              </a>
+            </section>
 
-          <a href="#contact" className="btn label-btn rotate-clockwise">
-            Contact me
-          </a>
+            <p>
+              <a href="#about">
+                Learn more <FiArrowRight />
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </StyledHero>
