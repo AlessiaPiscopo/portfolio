@@ -10,10 +10,11 @@ export default function Hero({ isDesktop }) {
       <div className="bg-container">
         <div className="intro-container">
           <img
-            src="/profile-pic.png"
+            src="/profile-pic-bw-square.png"
             alt="Black and white profile silhouette"
             className="profile-pic"
           />
+
           <div className="intro-content">
             <header className="intro-header">
               <h1 className="full-name">Alessia P.</h1>

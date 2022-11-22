@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledNavigation = styled.div`
   /* ---- common styles (mobile and desktop) */
+  color: white;
 
   background-color: transparent;
   position: fixed;
@@ -31,15 +32,12 @@ export const StyledNavigation = styled.div`
     position: fixed;
   }
 
-  .open-menu-btn-container {
-  }
-
   .open-menu-btn,
   .close-menu-btn {
     /* border: 2px solid yellow; */
     background-color: transparent;
     color: var(--clr-light);
-    padding: 1.2rem;
+    padding: 3.2rem;
   }
 
   .menu-icon {
@@ -102,8 +100,9 @@ export const NavDesktop = styled.header`
   }
 
   .nav-link {
-    background-color: var(--clr-dark);
+    /* background-color: var(--clr-dark); */
     font-size: 2rem;
+    font-weight: var(--fw-bold);
     padding: 0.4rem 1.2rem;
   }
 

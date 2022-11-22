@@ -1,10 +1,12 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
+
 import {
   StyledNavigation,
   NavMobile,
   NavDesktop,
 } from "../styles/Navigation.styled";
+
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export default function Navigation({ isDesktop }) {
@@ -28,26 +30,29 @@ export default function Navigation({ isDesktop }) {
             <div className="bg-semi-transparent">
               <nav className="nav-desktop">
                 <ul className="nav-items">
-                  <li className="logo">
+                  <li className="logo rotate-counter-clockwise">
                     <Link to="/">
                       <h1 className="logo-initials">AP</h1>
                     </Link>
                   </li>
 
                   <div className="links-right">
-                    <li className="rotate-counter-clockwise">
+                    {/* <li className="rotate-counter-clockwise"> */}
+                    <li>
                       <Link to="/" className="nav-link">
                         Home
                       </Link>
                     </li>
 
                     <li className="rotate-clockwise">
+                      {/* <li> */}
                       <Link to="/about" className="nav-link">
                         About
                       </Link>
                     </li>
 
-                    <li className="rotate-counter-clockwise">
+                    {/* <li className="rotate-counter-clockwise"> */}
+                    <li>
                       <Link to="/projects" className="nav-link">
                         Projects
                       </Link>

@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const StyledHero = styled.section`
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  color: white;
+
   background: url("/profile-pic-bw-square.png") no-repeat top fixed;
   background-size: cover;
-  width: 100vw;
-  min-height: 100vh;
 
+  /* lighten bg */
   .bg-container {
     background-color: rgba(300, 300, 300, 0.15);
+    width: 100%;
     min-height: 100vh;
-    width: 100vw;
     /* place red box in center */
     display: flex;
     align-items: center;
@@ -19,58 +20,55 @@ export const StyledHero = styled.section`
 
   /* RED BOX */
   .intro-container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 2.4rem;
 
     @media (min-width: 768px) {
-      height: fit-content;
       flex-direction: row;
-      /* padding: 8rem 4.8rem; */
+      margin: 9.6rem 0;
+      padding-left: 2.4rem;
     }
 
     img.profile-pic {
       display: none;
 
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         display: block;
-        max-height: 500px;
+        max-width: 40%;
       }
     }
 
     /* PINK BOX */
     .intro-content {
       /* border: 2px solid pink; */
-      max-width: 550px;
+      /* max-width: 500px; */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 2.4rem;
 
-      /* @media (min-width: 768px) {
+      @media (min-width: 768px) {
         align-items: flex-start;
-        justify-content: flex-start;
-      } */
+        text-align: left;
+      }
 
       .intro-header {
-        /* border: 2px solid blue; */
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        @media (min-width: 768px) {
-          /* align-items: flex-start; */
-          /* justify-content: flex-start; */
-        }
 
         .full-name {
           font-size: 2.4rem;
           margin-bottom: 1.2rem;
           background-color: transparent;
+
+          @media (min-width: 768px) {
+            margin-left: -50px;
+          }
         }
 
         .title {
@@ -79,7 +77,11 @@ export const StyledHero = styled.section`
           font-size: 2.4rem;
           padding: 0.4rem 4.5rem;
           background-color: var(--clr-dark);
-          transform: rotate(-3deg);
+          transform: rotate(-2deg);
+        }
+
+        @media (min-width: 768px) {
+          margin-left: -63px;
         }
       }
 
@@ -88,17 +90,20 @@ export const StyledHero = styled.section`
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 1.8rem;
-        padding: 3.2rem 0;
+        gap: 2.4rem;
+        padding: 4.8rem 0;
+        max-width: 350px;
 
         p {
           line-height: 2;
         }
 
         @media (min-width: 768px) {
-          text-align: left;
-          padding: 4.8rem 0;
           align-items: flex-start;
+          text-align: left;
+          gap: 1.2rem;
+          padding: 3.2rem 0;
+          max-width: 500px;
         }
       }
 
@@ -110,7 +115,7 @@ export const StyledHero = styled.section`
         justify-content: center;
         gap: 3.2rem;
         text-align: center;
-        padding-bottom: 2.4rem;
+        padding-bottom: 3.2rem;
 
         a {
           font-size: 2.4rem;
