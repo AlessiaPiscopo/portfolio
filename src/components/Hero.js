@@ -42,7 +42,7 @@ export default function Hero({ isDesktop }) {
                 target="_blank"
                 className="btn label-btn"
               >
-                Projects
+                GitHub
               </a>
 
               <a href="/contact" className="btn label-btn rotate-clockwise">
