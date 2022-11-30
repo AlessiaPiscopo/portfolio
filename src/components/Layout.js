@@ -12,7 +12,7 @@ export default function Layout({ children }) {
     <StyledLayout>
       <Navigation isDesktop={isDesktop} />
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </StyledLayout>
   );
 }

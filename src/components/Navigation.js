@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import React, { useState } from "react";
 
 import {
@@ -37,25 +37,32 @@ export default function Navigation({ isDesktop }) {
                   </li>
 
                   <div className="links-right">
-                    {/* <li className="rotate-counter-clockwise"> */}
-                    <li>
+                    {/* <li>
                       <Link to="/" className="nav-link">
                         Home
                       </Link>
-                    </li>
+                    </li> */}
 
                     <li className="rotate-clockwise">
                       {/* <li> */}
-                      <Link to="/about" className="nav-link">
+                      <Link to="/" className="nav-link">
                         About
                       </Link>
                     </li>
 
-                    {/* <li className="rotate-counter-clockwise"> */}
-                    <li>
+                    {/* <li>
                       <Link to="/projects" className="nav-link">
                         Projects
                       </Link>
+                    </li> */}
+                    <li>
+                      <a
+                        href="https://github.com/AlessiaPiscopo"
+                        target="_blank"
+                        className="nav-link"
+                      >
+                        GitHub
+                      </a>
                     </li>
 
                     <li className="rotate-clockwise">
@@ -90,32 +97,55 @@ export default function Navigation({ isDesktop }) {
 
                 <nav className="nav-mobile">
                   <ul className="nav-items">
-                    <li className="logo">
+                    {/* <li className="logo">
                       <Link to="/">
                         <div className="logo-initials">Alessia P.</div>
                       </Link>
-                    </li>
+                    </li> */}
 
-                    <li className="rotate-clockwise">
-                      <Link to="/" className="nav-link">
-                        Home
+                    <li className="nav-header">
+                      <Link
+                        to="/"
+                        onClick={handleCloseClick}
+                        className={isMenuClicked ? "nav-header-link" : "hidden"}
+                      >
+                        <h1 className="full-name">Alessia P.</h1>
+                        <h2 className="title">Web Developer</h2>
                       </Link>
                     </li>
 
+                    {/* <li className="rotate-clockwise">
+                      <Link to="/" className="nav-link">
+                        Home
+                      </Link>
+                    </li> */}
+
                     <li className="rotate-counter-clockwise">
-                      <Link to="/about" className="nav-link">
+                      <Link
+                        to="/"
+                        onClick={handleCloseClick}
+                        className={isMenuClicked ? "nav-link" : "hidden"}
+                      >
                         About
                       </Link>
                     </li>
 
                     <li className="rotate-clockwise">
-                      <Link to="/projects" className="nav-link">
-                        Projects
-                      </Link>
+                      <a
+                        href="https://github.com/AlessiaPiscopo"
+                        target="_blank"
+                        className="nav-link"
+                      >
+                        GitHub
+                      </a>
                     </li>
 
                     <li className="rotate-counter-clockwise">
-                      <Link to="/contact" className="nav-link">
+                      <Link
+                        to="/contact"
+                        onClick={handleCloseClick}
+                        className={isMenuClicked ? "nav-link" : "hidden"}
+                      >
                         Contact
                       </Link>
                     </li>

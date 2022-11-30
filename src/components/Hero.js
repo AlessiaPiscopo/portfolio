@@ -45,16 +45,16 @@ export default function Hero({ isDesktop }) {
                 Projects
               </a>
 
-              <a href="#contact" className="btn label-btn rotate-clockwise">
+              <a href="/contact" className="btn label-btn rotate-clockwise">
                 Contact
               </a>
             </section>
 
-            <p>
+            {/* <p>
               <a href="#about">
                 Learn more <FiArrowRight />
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

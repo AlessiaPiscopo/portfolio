@@ -1,22 +1,34 @@
 import styled from "styled-components";
 
-export const StyledContact = styled.section`
+export const StyledContact = styled.main`
   /* border: 2px solid yellow; */
   display: flex;
   flex-direction: column;
+  margin-top: 25%;
   align-items: center;
-  gap: 1.2rem;
+  gap: 4.8rem;
   text-align: center;
+  height: 100vh;
+  padding: 0 2.4rem;
 
-  .section-intro {
-    /* max-width: 400px; */
-
-    p:first-child {
-      padding-bottom: 0.8rem;
+  header {
+    .page-title {
+      margin: 0 auto;
+      text-align: center;
+      background-color: var(--clr-dark);
+      padding: 0.4rem 9.6rem;
+      margin-bottom: 6.4rem;
     }
 
-    .mail-to-link {
-      text-decoration: underline;
+    .page-intro {
+      max-width: 450px;
+      p:first-child {
+        margin-bottom: 2.4rem;
+      }
+
+      .mail-to-link {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -52,23 +64,49 @@ export const StyledContact = styled.section`
     }
   }
 
-  .socials-icons {
-    display: flex;
-    align-items: flex-end;
-    gap: 1.4rem;
-    cursor: pointer;
-
-    .socials-icon {
-      color: var(--color-gray-6);
-      font-size: 1.8rem;
-
-      &:hover {
-        opacity: 0.6;
-      }
+  .socials-container {
+    p {
+      margin-bottom: 2.4rem;
     }
 
-    .spotify {
-      font-size: 2rem;
+    .socials-icons {
+      /* border: 2px solid red; */
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      cursor: pointer;
+
+      @media (min-width: 600px) {
+        flex-direction: row;
+        gap: 2.4rem;
+      }
+
+      .icon-link {
+        /* border: 2px solid green; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        /* gap: 0.8rem; */
+        font-weight: var(--fw-bold);
+        &:hover {
+          opacity: 0.6;
+        }
+
+        .socials-icon {
+          color: var(--clr-gray-4);
+          font-size: 1.8rem;
+        }
+
+        span {
+          margin: 0 0.2rem 0 0.8rem;
+        }
+      }
+
+      /* 
+      .spotify {
+        font-size: 2rem;
+      } 
+      */
     }
   }
 `;

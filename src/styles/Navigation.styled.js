@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledNavigation = styled.div`
   /* ---- common styles (mobile and desktop) */
-  color: white;
 
+  color: white;
   background-color: transparent;
   position: fixed;
   top: 0;
@@ -22,26 +22,25 @@ export const StyledNavigation = styled.div`
     }
   }
 
+  /* --------------------------------------- */
+
   // ---- mobile
 
   /* buttons */
 
   .open-menu-btn-container,
   .close-menu-btn-container {
-    /* border: 2px solid blue; */
     position: fixed;
   }
 
   .open-menu-btn,
   .close-menu-btn {
-    /* border: 2px solid yellow; */
     background-color: transparent;
     color: var(--clr-light);
     padding: 3.2rem;
   }
 
   .menu-icon {
-    /* box-shadow: 1px 1px 20px black; */
     color: white;
   }
 `;
@@ -49,13 +48,12 @@ export const StyledNavigation = styled.div`
 export const NavMobile = styled.header`
   background: url("/texture-dark.jpg") no-repeat center center fixed;
   background-size: cover;
-  position: fixed;
+  /* position: fixed; */
   width: 100vw;
   height: 100vh;
   z-index: 1000;
 
   nav.nav-mobile {
-    border: 2px solid red;
     width: 100%;
     height: 100%;
     display: flex;
@@ -63,7 +61,6 @@ export const NavMobile = styled.header`
     z-index: 1000;
 
     .nav-items {
-      border: 2px solid purple;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -75,10 +72,39 @@ export const NavMobile = styled.header`
         padding: 0.4rem 9.6rem;
       }
 
-      .logo-initials {
+      /* .logo-initials {
         background-color: transparent;
         font-size: 2.6rem;
         padding-bottom: 2.4rem;
+      } */
+
+      .nav-header {
+        .nav-header-link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .full-name {
+          font-size: 2.4rem;
+          margin-bottom: 1.2rem;
+          background-color: transparent;
+          text-align: center;
+        }
+
+        .title {
+          width: 325px;
+          text-align: center;
+          font-size: 2.4rem;
+          padding: 0.4rem 4.5rem;
+          transform: rotate(-2deg);
+          color: #999;
+        }
+
+        @media (min-width: 768px) {
+          margin-left: -63px;
+        }
       }
     }
   }
@@ -100,7 +126,6 @@ export const NavDesktop = styled.header`
   }
 
   .nav-link {
-    /* background-color: var(--clr-dark); */
     font-size: 2rem;
     font-weight: var(--fw-bold);
     padding: 0.4rem 1.2rem;
