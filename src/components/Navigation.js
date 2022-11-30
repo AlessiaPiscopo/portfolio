@@ -46,7 +46,7 @@ export default function Navigation({ isDesktop }) {
                     <li className="rotate-clockwise">
                       {/* <li> */}
                       <Link to="/" className="nav-link">
-                        About
+                        Home
                       </Link>
                     </li>
 
@@ -126,7 +126,7 @@ export default function Navigation({ isDesktop }) {
                         onClick={handleCloseClick}
                         className={isMenuClicked ? "nav-link" : "hidden"}
                       >
-                        About
+                        Home
                       </Link>
                     </li>
 
