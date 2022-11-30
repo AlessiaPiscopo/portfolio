@@ -4,7 +4,6 @@ export const StyledContact = styled.main`
   /* border: 2px solid yellow; */
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
   align-items: center;
   gap: 4.8rem;
   text-align: center;
@@ -14,6 +13,8 @@ export const StyledContact = styled.main`
   header {
     .page-title {
       margin: 0 auto;
+      margin-top: 150px;
+
       text-align: center;
       background-color: var(--clr-dark);
       padding: 0.4rem 9.6rem;
