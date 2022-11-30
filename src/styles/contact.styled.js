@@ -4,7 +4,7 @@ export const StyledContact = styled.main`
   /* border: 2px solid yellow; */
   display: flex;
   flex-direction: column;
-  margin-top: 25%;
+  margin-top: 150px;
   align-items: center;
   gap: 4.8rem;
   text-align: center;
